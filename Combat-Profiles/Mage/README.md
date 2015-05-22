@@ -1,5 +1,5 @@
-#**FIRE MAGE ROTATIONS:**
-
+#**FIRE MAGE Leveing profile**
+###**ROTATIONS:**
 **CONSUMABLE:**
 - Drinks health potions when low
 - Cast conjure and drink/eat
@@ -30,7 +30,7 @@
 - Wand if out of mana. (autoattack if no wand in the bars)
 
 
-##**HOW TO USE:**
+###**HOW TO USE:**
 
 NB! You need to edit some Item ID's in the profile so it will not conjure for ever.
 You will also need to edit scorch if you think it is spamming it and you dont have the talent. or if you place the sheep macro another place
@@ -40,7 +40,7 @@ Make the sheep macro and put it in bar 2 slot 9. or edit in profile.
 This will target next target, cast sheep then go back to your last target.
 
 
-###**SHEEP MACRO:**
+**SHEEP MACRO:**
 
 /script TargetNearestEnemy();
 
