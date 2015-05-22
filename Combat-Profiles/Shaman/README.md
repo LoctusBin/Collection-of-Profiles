@@ -12,7 +12,7 @@ as i can see i think i have most of the profile working like i wanted it to, but
 
 **Buffs:**
 - Lightning shield when out of combat and not up
-- Will buff mainhand and offhand (Offhand need to remove some "//" in the profile. Open in notepad and just read down.)
+- Will buff mainhand and offhand (Offhand need to remove some "//" in the profile.)
 - Rockbiter, Flametongue after lvl 10, and Frostbrand after lvl 20
 
 **Healing routines:**
