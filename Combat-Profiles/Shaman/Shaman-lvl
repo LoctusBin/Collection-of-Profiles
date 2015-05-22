@@ -85,7 +85,7 @@ level>8
 castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
 !mainhandbuffed
 
-//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand
+//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand									<---- OFFHAND REMOVE THE "//" UNDER
 //Remove the "//" on the 2 lines below if you dual wield.
 //castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
 //!offhandbuffed
