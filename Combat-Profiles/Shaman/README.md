@@ -1,7 +1,7 @@
 # 1-60 Leveling profile for Shaman
 _Work mostly like a Enhancement profile._
 
-#### Offhand need to remove some "//" in the profile. Open profile in notepad and just read down.
+##### Offhand need to remove some "//" in the profile. Open profile in notepad and just read down.
 
 This is not 100% tested from 1-60, but as it is set up it will work (i hope?), if problem then post about it as detailed as possible :)
 
