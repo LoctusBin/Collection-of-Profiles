@@ -1,2 +1,4 @@
-# Collection-of-Profiles
+# Collection of VB Profiles
 Profiles for VanillaBotter
+
+Will come info here.
