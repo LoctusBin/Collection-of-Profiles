@@ -1,0 +1,192 @@
+// Shaman leveling profile, mostly set up for Enhancement/ Low mana use
+// Made by: Loctus
+// Need to remove some "//" if you are using dual wield. look down in the profile. line 55.
+
+//Global cooldown
+gcd:1500
+
+//====================================================================================
+// HEALS
+// healing totem is down in totems
+
+// Healing wave & 20+ Lesser Healing Wave
+// not heal if target almost dead
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+selfhp<60
+targethp<20
+mana>10
+
+// Healing wave & 20+ Lesser Healing Wave
+// more than 1 enemy target check
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+selfhp<70
+mana>10
+combatcount>1
+
+// Healing wave & 20+ Lesser Healing Wave
+// heal up when not in battle
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+!incombat
+selfhp<80
+mana>30
+
+//Healing Totem, smarter healing while drinking kinda
+castspell:5394;6375:6377;10462;10463;25567
+selfhp<90
+mana<50
+!incombat
+level>20
+selfbuff!5672;6371;6372;10461
+
+
+//====================================================================================
+// CONSUMEABLES
+
+// Drink up!
+use:drink
+channelingtime:27000
+breakoncombat
+!incombat
+mana<62
+afterloot
+
+//if not stay put and summon a mana totem and stay put? only if not casted.
+castspell:5675;10495;16190;17354;17359
+channelingtime:27000
+breakoncombat
+!incombat
+level>26
+selfbuff!5677;10491;10493;10494
+mana<59
+afterloot
+
+// THEN if not rebuff Lightning Shield and stand still? under lvl 26 and over lvl 8
+// More of an shit oom kinda thing
+castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+channelingtime:24000
+breakoncombat
+!incombat
+mana<30
+level>8
+afterloot
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Lightning Shield
+castspell:324;325;905;945;8134;10431;10432
+!incombat
+selfbuff!324;325;905;945;8134;10431;10432
+mana>25
+level>8
+
+//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand
+castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+!mainhandbuffed
+
+//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand
+//Remove the "//" on the 2 lines below if you dual wield.
+//castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+//!offhandbuffed
+
+
+//====================================================================================
+// ATTACK !!!!!
+
+//Attack
+castspell:6603
+distance<5
+!autoattacking
+nogcd
+
+
+//====================================================================================
+// TOTEMS
+
+//Healing Totem
+castspell:5394;6375:6377;10462;10463;25567
+selfhp<80
+mana>10
+level>20
+selfbuff!5672;6371;6372;10461
+
+//manaspring in combat
+castspell:5675;10495;10496;10497
+selfbuff!5677;10491;10493;10494;5672;6371;6372;10461
+mana<60
+incombat
+level>26
+
+//Stoneskin Totem
+castspell:8071;8154;8155;10406;10407;10408
+distance<30
+mana>10
+level>4
+selfbuff!8072;8156;5187;10403;10404;10405
+
+//Searing Totem
+castspell:3599;6363;6364;6365;10437;10438
+mana>10
+incombat
+level>10
+castonce
+
+//Fire Nova Totem
+castspell:1535;8498;8499;11314;11315
+mana>10
+incombat
+combatcount>2
+level>12
+castonce
+
+
+//====================================================================================
+// DMG SPELLS
+
+//Lightning Bolt
+castspell:403;529;548;915;943;6041;10391;10392;15207;15208
+distance<30
+distance>5
+!incombat
+mana>10
+castonce
+
+//Lightning Bolt on Clearcasting
+castspell:403;529;548;915;943;6041;10391;10392;15207;15208
+distance<30
+!haveaggro
+selfbuff=16246
+
+//Chain Lightning when multiple mobs
+castspell:421;930;2860;10605
+distance<30
+!haveaggro
+combatcount>2
+cooldown:6000
+level>32
+mana>10
+
+//Flame Shock
+castspell:8050;8052;8053;10447;10448;29228
+distance<20 
+mana>10 
+level>10
+targetbuff!8050;8052;8053;10447;10448;29228
+cooldown:6000;1
+chance:51
+
+//Earth Shock & 20+ Frost shock
+castspell:8042;8044;8045;8056;8058;10472;10473
+distance<20
+mana>10
+level>4
+cooldown:6000;1
+chance:84
+
+//Stormstrike
+castspell:17364
+distance<5
+mana>10
+level>40
+cooldown:20000
