@@ -8,9 +8,7 @@ As for now, i will put a readme with each of the profiles to tell what they do a
 
 #### IF THERE IS SOMETHING:
 
-_If there is some problems in the profiles please post it as an issue._
-
-_If there is something you want changed then post as request :)_
+_If there is some problems in the profile or have a request or something please post it as an issue. And remember to allways use as much info as possible._
 
 
 _Will come more info here later._
