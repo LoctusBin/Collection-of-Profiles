@@ -1,0 +1,156 @@
+// A Rogue Combat profile from VanillaBot's Default profile.
+// With improved eat handling and more to come :)
+//
+
+gcd:1000
+
+//health potion
+use:health potion
+selfhp<15
+incombat
+
+
+//====================================================================================
+// CONSUMABLES
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+
+//Eat - in case.
+use:food
+selfhp<58
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+
+//Rest, if out of food and bandage
+cast:20
+selfhp<55
+channelingtime:15000
+!incombat
+breakoncombat
+afterloot
+
+//Stamina Scroll
+use:stamina scroll
+selfbuff!1243;1244;1245;2791;10937;10938
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+
+//====================================================================================
+// BUFF
+
+//kick
+castspell:1771
+enemycasting
+incombat
+distance<5
+energy>25
+level>11
+
+
+//====================================================================================
+// PULLING
+
+//pull with bow/gun/thrown
+//castspell:2764;7919;2480;7918
+//channelingtime:2500
+//distance<30
+//distance>15
+//!incombat
+
+//stealth
+castspell:1784;1785;1786;1787
+selfbuff!1784;1785;1786;1787
+distance<40
+!incombat
+cooldown:10000
+
+//cheap shot
+castspell:1833
+targetbyff!1833
+selfbuff=1784;1785;1786;1787
+distance<5
+level>25
+
+//SS if cheap shot is not available
+castspell:1752;1757;1758;1759;1760;8621;11293;11294
+selfbuff=1784;1785;1786;1787
+distance<5
+level<26
+
+//====================================================================================
+// COMBAT
+
+//SND
+castspell:5171;6774
+energy>25
+combopoints>1
+castonce
+
+//evasion
+castspell:5277
+selfhp<30
+targethp>25
+cooldown:210000
+nogcd
+level>7
+
+//adrenaline rush
+castspell:13750
+combatcount>1
+cooldown:300000
+
+//gouge
+castspell:1776;1777;8629;11285;11286
+selfhp<50
+combatcount<2
+channelingtime:5500
+cooldown:10000
+breakonkill
+energy>45
+targethp>15
+breakoncombat
+combopoints<5
+level>5
+
+//sinister strike
+castspell:1752;1757;1758;1759;1760;8621;11293;11294
+energy>45
+combopoints<4
+distance<5
+
+//eviscerate
+castspell:2098;6760;6761;6762;8623;8624;11299;11300
+energy>35
+combopoints>3
+distance<5
+
+//attack
+castspell:6603
+distance<5
+!autoattacking
+nogcd
