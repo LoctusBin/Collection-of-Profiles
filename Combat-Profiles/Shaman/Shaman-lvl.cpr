@@ -70,6 +70,27 @@ mana<30
 level>8
 afterloot
 
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+selfbuff!1243;1244;1245;2791;10937;10938
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+selfbuff!1459;1460;1461;1475;10156;10157
+!incombat
 
 //====================================================================================
 // BUFF UP!!

@@ -135,6 +135,15 @@ breakoncombat
 //haveitem<3:trigger:2
 afterloot
 
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+selfbuff!1243;1244;1245;2791;10937;10938
+!incombat
+
 
 //=====================================================================
 // BUFF UP!!!

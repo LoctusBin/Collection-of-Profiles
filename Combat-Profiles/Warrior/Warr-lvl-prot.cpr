@@ -54,6 +54,19 @@ channelingtime:15000
 breakoncombat
 afterloot
 
+//Stamina Scroll
+use:stamina scroll
+selfbuff!1243;1244;1245;2791;10937;10938
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
 
 //====================================================================================
 // BUFF
