@@ -1,0 +1,191 @@
+// Basic warr.
+//
+//TODO:
+//- overpower spell. working on it - prob going to stay as macro
+//- Sunder armor as an option.
+
+//Heroic Strike, Overpower and Revenge in one Macro: (Need at lvl 12+)
+//This is set on bar 2 slot 9.
+// /cast Heroic Strike
+// /cast Overpower
+
+//setting global cooldown (in milliseconds)
+gcd:1500
+
+
+//health potion
+use:health potion
+selfhp<15
+incombat
+
+//====================================================================================
+// CONSUMABLES
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+
+//Eat - in case.
+use:food
+selfhp<55
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+
+//Rest, if out of food and bandage
+cast:20
+selfhp<55
+channelingtime:15000
+!incombat
+breakoncombat
+afterloot
+
+
+//====================================================================================
+// BUFF
+
+//Battle Shout - always up 6673;5242;6192;11549;11550;11551;5289
+castspell:5242
+selfbuff=71
+selfbuff!5242
+rage>10
+
+//Bloodrage - in combat and prot
+castspell:2687
+selfbuff=71
+selfhp>82
+targethp>63
+incombat
+cooldown:60000;2
+rage<10
+
+//Sunder armor - if in group then remove the "//" under here
+//
+// Jet to implement
+//
+
+//Set defence stance low health
+castspell:71
+selfbuff!71
+incombat
+selfhp>40
+level>10
+rage<9
+cooldown:1000;1
+nogcd
+
+//Set combat stance - Always up
+castspell:2457
+selfbuff!2457
+!incombat
+cooldown:1000;1
+nogcd
+
+
+//====================================================================================
+// PULLING
+
+//charge - one extra sec. to deal with lag
+castspell:100;6178;11578
+selfbuff=2457
+distance>8
+distance<25
+cooldown:16000
+!incombat
+level>4
+triggers:1
+
+
+//====================================================================================
+// COMBAT
+
+//move into range if autoattacking is on but mob walks away
+// dont know if do something as for now
+//cast:20
+//distance<5
+//cooldown:5000
+//nogcd
+//rage<15
+
+//auto attack
+castspell:6603
+distance<4
+!autoattacking
+nogcd
+
+//execute
+castspell:5308;20658;20660;20661;20662
+targethp<20
+distance<5
+rage>15
+level>24
+
+//rend
+castspell:772;6546;6547;6548;11573;11574
+targetbuff!772;6546;6547;6548;11573;11574
+targethp>30
+rage>10
+distance<5
+level>4
+
+//bloodthirst
+castspell:23881;23892;23893;23894
+cooldown:6000
+rage>30
+distance<5
+targethp>10
+level>40
+
+//cleave
+castspell:845;7369;11608;11609;20569
+combatcount>1
+rage>30
+nogcd
+distance<5
+level>20
+
+//Thunder Clap
+castspell:6343;8198;8204;5205;11580;11581
+selfbuff=2457
+incombat
+level>6
+rage>20
+cooldown:4000
+combatcount>1
+chance:50
+
+//heroic strike + overpower
+//you can remove "//" and "cast:29" if you dont want to use Overpower
+//castspell:78;284;285;1608;11564;11565;11566;25286
+cast:29
+distance<5
+targethp>20
+rage>30
+autoattacking
+nogcd
+chance:50
+level>12
+
+//heroic strike till lvl 12
+castspell:78;284;285;1608;11564;11565;11566;25286
+distance<5
+targethp>10
+rage>15
+autoattacking
+nogcd
+level<12
+

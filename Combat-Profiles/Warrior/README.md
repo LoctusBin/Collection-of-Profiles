@@ -1,7 +1,7 @@
-# 1-60 Stancedance Prot Warrior _BETA_
+# 1-60 Warrior _early BETA_
 
 This is my Stancedance prot warrior profile, as it is.
-Will prob. make another dps based one too, when i get some more lvl on my warrior.
+There is now also a standard warr profile, not tested 100% but when im going ot test it i will update it alot to work better with the warrior spells.
 
 ### HOW TO USE:
 
