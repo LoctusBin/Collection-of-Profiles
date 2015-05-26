@@ -22,16 +22,6 @@
 // ex. haveitem:5514<1 <- in here replace the 5514 with your ID of rank.
 // I have marked the 3 spells that checks for item IDs for you :)
 
-//Conjure Mana Gem - Gem #s in order: 5514;5513;8007;8008 after rank
-// change haveitem number to your number											<<-------- CHANGE SOME HERE
-castspell:759;3552;10053;10054
-mana>25
-!incombat
-//haveitem:5514;5513;8007;8008<1 maybe soon i hope?
-haveitem:5513<1
-cooldown:4000
-level>27
-
 //conjure food - Food #s in order: 5349;1113;1114;1487;8075;8076;22895 after rank
 // change haveitem number to your number											<<-------- CHANGE SOME HERE
 castspell:587;597;990;6129;10144;10145;28612
@@ -81,6 +71,46 @@ aftercombat
 //cooldown:480000
 //triggeredby:4
 //level>19
+
+
+//=====================================================================
+// Conjure
+
+//Conjure Mana Gem Rank 1
+castspell:759
+mana>40
+cooldown:4000
+haveitem:5514<1
+level>27
+level<38
+!incombat
+
+//Conjure Mana Gem Rank 2
+castspell:3552
+mana>40
+cooldown:4000
+haveitem:5513<1
+level>37
+level<48
+!incombat
+
+//Conjure Mana Gem Rank 3
+castspell:10053
+mana>40
+cooldown:4000
+haveitem:8007<1
+level>47
+level<58
+!incombat
+
+//Conjure Mana Gem Rank 4
+castspell:10054
+mana>40
+cooldown:4000
+haveitem:8008<1
+level>57
+!incombat
+
 
 
 //=====================================================================
