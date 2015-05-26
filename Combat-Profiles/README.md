@@ -6,7 +6,8 @@ Each of the classes will have their own readme to tell how to set up and how mos
 
 ## How to add Combat profile to bot
 
-To add one of my combat profiles to your VanillaBot you need to download all my profiles
-Download: [link](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+To add one of my combat profiles to your VanillaBot you need to download all my profiles.
+
+Download All Profiles: [link](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
 
 After that you copy your selected profile (the .cpr file) to "/combat" folder in your bot folder. after that load it like a normal combat profile :)
