@@ -5,6 +5,7 @@ There is now also a standard warr profile, not tested 100% but when im going ot 
 
 ### HOW TO USE:
 
+you can use this macro on both profiles, dosnt really matters on the non prot profile
 ##### Heroic Strike, Overpower and Revenge in one Macro: _(Need at lvl 12+) This is set on bar 2 slot 9._
 
 /cast Heroic Strike
