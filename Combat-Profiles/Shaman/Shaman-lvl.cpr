@@ -35,7 +35,7 @@ castspell:5394;6375:6377;10462;10463;25567
 selfhp<90
 mana<50
 !incombat
-level>20
+level>19
 selfbuff!5672;6371;6372;10461
 
 
@@ -55,19 +55,17 @@ castspell:5675;10495;16190;17354;17359
 channelingtime:27000
 breakoncombat
 !incombat
-level>26
+level>25
 selfbuff!5677;10491;10493;10494
 mana<59
 afterloot
 
-// THEN if not rebuff Lightning Shield and stand still? under lvl 26 and over lvl 8
-// More of an shit oom kinda thing
-castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+// If not stand still and rest
+cast:20
 channelingtime:24000
 breakoncombat
 !incombat
 mana<30
-level>8
 afterloot
 
 //Spirit Scroll
@@ -100,7 +98,7 @@ castspell:324;325;905;945;8134;10431;10432
 !incombat
 selfbuff!324;325;905;945;8134;10431;10432
 mana>25
-level>8
+level>7
 
 //MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand
 castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
@@ -129,7 +127,7 @@ nogcd
 castspell:5394;6375:6377;10462;10463;25567
 selfhp<80
 mana>10
-level>20
+level>19
 selfbuff!5672;6371;6372;10461
 
 //manaspring in combat
@@ -137,20 +135,20 @@ castspell:5675;10495;10496;10497
 selfbuff!5677;10491;10493;10494;5672;6371;6372;10461
 mana<60
 incombat
-level>26
+level>25
 
 //Stoneskin Totem
 castspell:8071;8154;8155;10406;10407;10408
 distance<30
 mana>10
-level>4
+level>3
 selfbuff!8072;8156;5187;10403;10404;10405
 
 //Searing Totem
 castspell:3599;6363;6364;6365;10437;10438
 mana>10
 incombat
-level>10
+level>9
 castonce
 
 //Fire Nova Totem
@@ -158,7 +156,7 @@ castspell:1535;8498;8499;11314;11315
 mana>10
 incombat
 combatcount>2
-level>12
+level>11
 castonce
 
 
@@ -185,14 +183,14 @@ distance<30
 !haveaggro
 combatcount>2
 cooldown:6000
-level>32
+level>31
 mana>10
 
 //Flame Shock
 castspell:8050;8052;8053;10447;10448;29228
 distance<20 
 mana>10 
-level>10
+level>9
 targetbuff!8050;8052;8053;10447;10448;29228
 cooldown:6000;1
 chance:51
@@ -201,7 +199,7 @@ chance:51
 castspell:8042;8044;8045;8056;8058;10472;10473
 distance<20
 mana>10
-level>4
+level>3
 cooldown:6000;1
 chance:84
 
@@ -209,5 +207,5 @@ chance:84
 castspell:17364
 distance<5
 mana>10
-level>40
+level>39
 cooldown:20000

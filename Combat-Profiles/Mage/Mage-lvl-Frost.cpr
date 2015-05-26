@@ -30,7 +30,7 @@ mana>25
 //haveitem:5514;5513;8007;8008<1 maybe soon i hope?
 haveitem:5513<1
 cooldown:4000
-level>28
+level>27
 
 //conjure food - Food #s in order: 5349;1113;1114;1487;8075;8076;22895 after rank
 // change haveitem number to your number											<<-------- CHANGE SOME HERE
@@ -39,7 +39,7 @@ castspell:587;597;990;6129;10144;10145;28612
 breakoncombat
 haveitem:1487<4
 cooldown:3500
-level>6
+level>5
 
 //conjure water, Water #s in order: 5350;2288;2136;3772;8077;8078;8079 after rank.
 // change haveitem number to your number											<<-------- CHANGE SOME HERE
@@ -48,7 +48,7 @@ castspell:5504;5505;5506;6127;10138;10139;10140
 breakoncombat
 haveitem:3772<4
 cooldown:3500
-level>4
+level>3
 
 // AND YOUR DONE! ======================/
 
@@ -80,7 +80,7 @@ aftercombat
 //castspell:12051
 //cooldown:480000
 //triggeredby:4
-//level>20
+//level>19
 
 
 //=====================================================================
@@ -93,7 +93,7 @@ mana<27
 targethp>20
 incombat
 cooldown:120000
-level>28
+level>27
 
 //triggered drink
 use:drink
@@ -154,7 +154,7 @@ selfhp<85
 incombat
 selfbuff!11426;13031;13032;13033
 cooldown:30000;1
-level>40
+level>39
 
 //Ice Barrier - Out of combat, before pulling
 castspell:11426;13031;13032;13033
@@ -162,9 +162,9 @@ castspell:11426;13031;13032;13033
 selfbuff!11426;13031;13032;13033
 cooldown:30000;1
 distance<35
-level>40
+level>39
 
-//Frost Armor, 30+ frost armor
+//Frost Armor, 30+ ice armor
 castspell:168;7300;7301;7302;7320;10219;10220
 mana>70
 selfbuff!168;7300;7301;7302;7320;10219;10220
@@ -181,7 +181,7 @@ castspell:604;8450;8451;10173;10174
 mana>70
 selfbuff!604;8450;8451;10173;10174
 !incombat
-level>12
+level>11
 
 //Mana Shield (crise!)
 castspell:1463;8494;8495;10191;10193
@@ -189,14 +189,14 @@ selfhp<20
 mana>25
 selfbuff!1463;8494;8495;10191;10193;11426;13031;13032;13033
 incombat
-level>20
+level>19
 
 //Ice Block - Last Resort
 castspell:11958
 selfbuff!1463;8494;8495;10191;10193;11426;13031;13032;13033;11426;13031;13032;13033
 selfhp<10
 mana<50
-level>30
+level>29
 incombat
 
 
@@ -210,7 +210,7 @@ distance<30
 distance>15
 !incombat
 castonce
-level>4
+level>3
 
 //=====================================================================
 // DMG SPELLS
@@ -224,7 +224,7 @@ mana>10
 distance<30
 combatcount>1
 cooldown:32000
-level>8
+level>7
 
 //===============/
 // SOME FROST NOVA REQ/
@@ -243,7 +243,7 @@ targethp>30
 distance<7
 backpedal:1400
 cooldown:25000;2
-level>20
+level>19
 triggers:1
 incombat
 
@@ -258,7 +258,7 @@ backpedal:1300
 cooldown:25000;2
 incombat
 combatcount<2
-level>10
+level>9
 
 //Frost nova - then walk back a bit, if more than 2 enemies
 castspell:122;865;6131;10231;10230;6132;1225;1194
@@ -269,7 +269,7 @@ backpedal:1600
 cooldown:25000;2
 incombat
 combatcount>2
-level>10
+level>9
 
 //Frost Nova - In dead zone
 castspell:122;865;6131;10231;10230;6132;1225;1194
@@ -287,7 +287,7 @@ mana>10
 targethp<20
 distance<10
 cooldown:8000
-level>26
+level>25
 
 //Fireblast - sometimes to get more dps
 castspell:2136;2137;2138;8412;8413;10197;10199
@@ -295,7 +295,7 @@ mana>10
 targethp<50
 distance<12
 cooldown:10000
-level>6
+level>5
 chance:40
 
 //Frostbolt - Fireball before this

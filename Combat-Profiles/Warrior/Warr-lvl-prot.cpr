@@ -111,7 +111,7 @@ distance>8
 distance<25
 cooldown:16000
 !incombat
-level>4
+level>3
 triggers:1
 
 // Will sett in a thunderclap trigger when 2 or more enemies
@@ -121,7 +121,7 @@ triggers:1
 castspell:71
 selfbuff!71
 incombat
-level>10
+level>9
 cooldown:1000;1
 triggeredby:3
 nogcd
@@ -130,8 +130,8 @@ nogcd
 castspell:6343;8198;8204;5205;11580;11581
 selfbuff=2457
 incombat
-level>6
-rage>20
+level>5
+rage>19
 cooldown:4000;3
 triggers:3
 triggeredby:2
@@ -139,7 +139,7 @@ triggeredby:2
 //Bloodrage - trigger 1
 castspell:2687
 incombat
-level>10
+level>9
 cooldown:60000;2
 combatcount>1
 triggers:2
@@ -149,7 +149,7 @@ triggeredby:1
 castspell:6343;8198;8204;5205;11580;11581
 selfbuff=2457
 incombat
-level>6
+level>5
 level<10
 rage>20
 cooldown:4000;3
@@ -161,7 +161,7 @@ castspell:71
 selfbuff!71
 incombat
 targethp>53
-level>10
+level>9
 rage<7
 cooldown:1000;1
 combatcount<2
@@ -190,7 +190,7 @@ castspell:5308;20658;20660;20661;20662
 targethp<20
 distance<5
 rage>15
-level>24
+level>23
 
 //rend
 castspell:772;6546;6547;6548;11573;11574
@@ -198,7 +198,7 @@ targetbuff!772;6546;6547;6548;11573;11574
 targethp>30
 rage>10
 distance<5
-level>4
+level>3
 
 //bloodthirst
 castspell:23881;23892;23893;23894
@@ -206,7 +206,7 @@ cooldown:6000
 rage>30
 distance<5
 targethp>10
-level>40
+level>39
 
 //cleave
 castspell:845;7369;11608;11609;20569
@@ -214,7 +214,7 @@ combatcount>1
 rage>30
 nogcd
 distance<5
-level>20
+level>19
 
 //Overpower - test, not working as intended, trying different stuff here.
 castspell:7384;7887;11584;11585
@@ -234,7 +234,7 @@ rage>30
 autoattacking
 nogcd
 chance:50
-level>12
+level>11
 
 //heroic strike - just to do it sometimes at 15+ rage
 castspell:78;284;285;1608;11564;11565;11566;25286
