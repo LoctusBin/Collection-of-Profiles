@@ -1,5 +1,5 @@
 // A Rogue Combat profile from VanillaBot's Default profile.
-// With improved eat handling and more to come :)
+// With improved eat handling +++++
 //
 
 gcd:1000
@@ -63,6 +63,14 @@ use:agility scroll
 //====================================================================================
 // BUFF
 
+//evasion
+castspell:5277
+selfhp<30
+targethp>25
+cooldown:210000
+nogcd
+level>7
+
 //kick
 castspell:1771
 enemycasting
@@ -89,18 +97,10 @@ distance<40
 !incombat
 cooldown:10000
 
-//cheap shot
-castspell:1833
-targetbyff!1833
+//Sinister Strike & 26+ cheap shot
+castspell:1752;1757;1758;1759;1760;8621;11293;11294;1833
 selfbuff=1784;1785;1786;1787
 distance<5
-level>25
-
-//SS if cheap shot is not available
-castspell:1752;1757;1758;1759;1760;8621;11293;11294
-selfbuff=1784;1785;1786;1787
-distance<5
-level<26
 
 //====================================================================================
 // COMBAT
@@ -111,18 +111,12 @@ energy>25
 combopoints>1
 castonce
 
-//evasion
-castspell:5277
-selfhp<30
-targethp>25
-cooldown:210000
-nogcd
-level>7
-
 //adrenaline rush
 castspell:13750
 combatcount>1
 cooldown:300000
+level>39
+incombat
 
 //gouge
 castspell:1776;1777;8629;11285;11286
@@ -140,7 +134,7 @@ level>5
 //sinister strike
 castspell:1752;1757;1758;1759;1760;8621;11293;11294
 energy>45
-combopoints<4
+combopoints<5
 distance<5
 
 //eviscerate
