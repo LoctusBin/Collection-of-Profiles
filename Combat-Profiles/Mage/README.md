@@ -33,7 +33,7 @@ In the Frost version you can think of taking away the firespells and putting in 
 
 
 ###**HOW TO USE:**  
-NB! You need to edit some Item ID's in the profile so it will not conjure for ever.
+NB! Remember to go to trainer to get newest conjure, no more need to edit the profile (will update/fix in next version of VB)
 You will also need to edit scorch if you think it is spamming it and you dont have the talent. or if you place the sheep macro another place
 every line you will need to edit are marked and easy to find.
 
