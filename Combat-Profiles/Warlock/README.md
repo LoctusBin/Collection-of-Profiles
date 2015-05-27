@@ -24,4 +24,9 @@ _Tweaked and made more userfriendly by me._
 - Made more userfriendly
 - Removed some race spesific spells
 - And clean up the profile some :)
+- Added in dismiss imp if have soulshard
+
+you need to put this macro on bar 2 slot 9  
+##### MACRO for dismiss imp:  
+/run PetDismiss();
 

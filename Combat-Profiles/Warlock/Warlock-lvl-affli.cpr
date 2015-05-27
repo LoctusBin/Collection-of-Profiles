@@ -13,6 +13,15 @@ incombat
 //=====================================================================
 // PET stuff
 
+//MACRO: /run PetDismiss();
+// To get rid of imp and summon voidwalker, put on bar 2 slot 9
+cast:29
+petactive
+haveitem:6265>0
+selfbuff=6307;7804;7805;11766;11767
+!incombat
+level>9
+
 // Summon imp - early
 castspell:688
 mana>25
