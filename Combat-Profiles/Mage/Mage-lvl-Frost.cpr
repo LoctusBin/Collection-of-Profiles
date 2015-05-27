@@ -1,9 +1,5 @@
-// This profile is tweaked and modified from other profiles, have tried to rep them where needed.
-// sry if you are left out :( this is a profile for fire mage lvling with a lot of dps as i can figure out.
+// Taken from the Fire profile and added in the frost spells
 // Put together by: Loctus
-//
-// If spams scorch allot and you still have not spec. for improved scorch then read down and tweak it :D
-// it is marked as "<--- SCORCH TWEAKING" like the rest :)
 //
 // Also remember sheep macro on bar 2 slot 9. or edit down below.
 // SHEEP MACRO:
@@ -11,39 +7,6 @@
 // /cast Polymorph
 // /script TargetLastTarget()
 //
-//
-
-
-// CHANGE SOME HERE =====================/
-//
-// Only here you need to change some item IDs
-// #s: 5514;5513;8007;8008 = rank1;rank2;rank3;rank4 and so on
-// copy your number for your rank and replace the number in haveitem
-// ex. haveitem:5514<1 <- in here replace the 5514 with your ID of rank.
-// I have marked the 3 spells that checks for item IDs for you :)
-
-//conjure food - Food #s in order: 5349;1113;1114;1487;8075;8076;22895 after rank
-// change haveitem number to your number											<<-------- CHANGE SOME HERE
-castspell:587;597;990;6129;10144;10145;28612
-!incombat
-breakoncombat
-haveitem:1487<4
-cooldown:3500
-level>5
-
-//conjure water, Water #s in order: 5350;2288;2136;3772;8077;8078;8079 after rank.
-// change haveitem number to your number											<<-------- CHANGE SOME HERE
-castspell:5504;5505;5506;6127;10138;10139;10140
-!incombat
-breakoncombat
-haveitem:3772<4
-cooldown:3500
-level>3
-
-// AND YOUR DONE! ======================/
-
-
-
 
 gcd:1500
 
@@ -111,6 +74,130 @@ haveitem:8008<1
 level>57
 !incombat
 
+
+//Conjure Food Rank 1
+castspell:587	
+!incombat
+breakoncombat
+haveitem:5349<3
+cooldown:3500
+level>5
+level<12
+ 		 
+//Conjure Food Rank 2
+castspell:597
+!incombat
+breakoncombat
+haveitem:1113<3
+cooldown:3500
+level>11
+level<22
+
+//Conjure Food Rank 3
+castspell:990
+!incombat
+breakoncombat
+haveitem:1114<3
+cooldown:3500
+level>21
+level<32
+
+//Conjure Food Rank 4
+castspell:6129
+!incombat
+breakoncombat
+haveitem:1487<3
+cooldown:3500
+level>31
+level<42
+
+//Conjure Food Rank 5
+castspell:10144
+!incombat
+breakoncombat
+haveitem:8075<3
+cooldown:3500
+level>41
+level<52
+
+//Conjure Food Rank 6
+castspell:10145
+!incombat
+breakoncombat
+haveitem:8076<3
+cooldown:3500
+level>51
+level<60
+
+//Conjure Food Rank 7
+castspell:28612
+!incombat
+breakoncombat
+haveitem:22895<3
+cooldown:3500
+level>59
+
+//Conjure Water Rank 1
+castspell:5504
+!incombat
+breakoncombat
+haveitem:5350<3
+cooldown:3500
+level>3
+level<10
+
+//Conjure Water Rank 2
+castspell:5505
+!incombat
+breakoncombat
+haveitem:2288<3
+cooldown:3500
+level>9
+level<20
+
+//Conjure Water Rank 3
+castspell:5506
+!incombat
+breakoncombat
+haveitem:2136<3
+cooldown:3500
+level>19
+level<30
+
+//Conjure Water Rank 4
+castspell:6127
+!incombat
+breakoncombat
+haveitem:3772<3
+cooldown:3500
+level>29
+level<40
+
+//Conjure Water Rank 5
+castspell:10138
+!incombat
+breakoncombat
+haveitem:8077<3
+cooldown:3500
+level>39
+level<50
+
+//Conjure Water Rank 6
+castspell:10139
+!incombat
+breakoncombat
+haveitem:8078<3
+cooldown:3500
+level>49
+level<60
+
+//Conjure Water Rank 7
+castspell:10140
+!incombat
+breakoncombat
+haveitem:8079<3
+cooldown:3500
+level>59
 
 
 //=====================================================================
