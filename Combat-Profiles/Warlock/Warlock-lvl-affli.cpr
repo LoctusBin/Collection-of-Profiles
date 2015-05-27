@@ -10,6 +10,12 @@ use:health potion
 selfhp<15
 incombat
 
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
 //=====================================================================
 // PET stuff
 
@@ -63,6 +69,14 @@ petactive
 pethealth<10
 channelingtime:10000
 level>11
+
+//wait for voidwalker health
+cast:20
+!incombat
+petactive
+pethealth<50
+channelingtime:10000
+breakoncombat
 
 //=====================================================================
 // FOOD AND WATER and stuff
@@ -318,7 +332,20 @@ castspell:686;695;705;1088;1106;7641;11659;11660;11661;25307
 targethp>40
 distance<30
 
-// Wand
+//=====================================================================
+// AUTO ATTACK
+
+//Wand - just in case
 castspell:5019
-!wandcasting
 distance<30
+mana<10
+!wandcasting
+!autoattacking
+
+//Attack - if no wand
+castspell:6603
+distance<5
+mana<10
+!wandcasting
+!autoattacking
+nogcd
