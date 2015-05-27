@@ -1,4 +1,4 @@
-#**MAGE Leveling profile**  
+#**1-60 Mage - Frost & Fire**  
 In the Frost version you can think of taking away the firespells and putting in some of the frost spells. Will update this with the time. The frost version is in alpha as for now. The setup is still the same.
 
 ###**ROTATIONS:**
