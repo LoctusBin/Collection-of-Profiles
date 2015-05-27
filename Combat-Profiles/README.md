@@ -1,5 +1,5 @@
 # Combat Profiles  
-As for now there is a few combat profiles up, more will come with the time. 
+As for now there is a few combat profiles up, more will come with the time.  
 I will update and fix anny issue there is, and if someone wats help with making a profile just tell me.
 
 ## How to add Combat profile to bot:  
