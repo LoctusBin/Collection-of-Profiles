@@ -5,6 +5,17 @@
 //Global cooldown
 gcd:1500
 
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
 //====================================================================================
 // HEALS
 // healing totem is down in totems
