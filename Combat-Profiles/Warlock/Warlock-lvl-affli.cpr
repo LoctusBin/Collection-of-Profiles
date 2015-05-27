@@ -14,7 +14,7 @@ incombat
 // PET stuff
 
 // Summon imp - early
-castspell:697
+castspell:688
 mana>25
 !incombat
 !petactive
@@ -22,7 +22,7 @@ channelingtime:11000
 level<10
 
 // Summon imp - no soul shard
-castspell:697
+castspell:688
 mana>25
 !incombat
 !petactive
