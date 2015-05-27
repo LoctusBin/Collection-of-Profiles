@@ -1,4 +1,4 @@
-# 1-60 Leveling profile for Shaman
+# 1-60 Shaman
 _Work mostly like a Enhancement profile._
 
 **If using offhand wep. you need to remove some "//" in the profile.**  _Open profile in notepad and just read down._
