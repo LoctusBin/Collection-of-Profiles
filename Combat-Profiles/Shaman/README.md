@@ -1,12 +1,8 @@
 # 1-60 Leveling profile for Shaman
 _Work mostly like a Enhancement profile._
 
-##### Offhand need to remove some "//" in the profile. Open profile in notepad and just read down.
-
-This is not 100% tested from 1-60, but as it is set up it will work (i hope?), if problem then post about it as detailed as possible :)
-
-This is something that i made for my shaman that i lvled up and stopped at lvl 23. not sure if im going to test the profile when im updating it. but will update from feedback.
-as i can see i think i have most of the profile working like i wanted it to, but if something is better than other tell me so i can make this a good leveling profile :) 
+##### If using offhand wep. you need to remove some "//" in the profile.  
+##### Open profile in notepad and just read down.
 
 ## **Combat profile setup:**
 
