@@ -70,7 +70,17 @@ pethealth<10
 channelingtime:10000
 level>11
 
-//wait for voidwalker health
+// Consume Shadows - not in combat
+castspell:17767;17850;17851;17852;17853;17854
+!incombat
+petactive
+pethealth<60
+channelingtime:10000
+cooldown:15000
+breakoncombat
+level>17
+
+//wait for pet health - just in case
 cast:20
 !incombat
 petactive
@@ -273,9 +283,17 @@ targethp>20
 targetbuff!18265;18879;18880;18881
 level>29
 
+// Shadowburn
+castspell:17877;18867;18868;18869;18870;18871
+haveitem:6265>0
+targethp<10
+distance<20
+mana>10
+level>19
+
 // Drain Soul
 castspell:1120;8288;8289;11675
-haveitem:6265<1
+haveitem:6265<4
 targethp<30
 distance<30
 mana>10
