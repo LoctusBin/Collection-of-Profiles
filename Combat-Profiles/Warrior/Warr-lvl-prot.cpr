@@ -245,3 +245,20 @@ autoattacking
 nogcd
 level<12
 
+//Shield Block - 1 enemy
+castspell:2565
+cooldown:5000;4
+targethp>20
+selfhp<90
+rage>9
+level>15
+combatcount<2
+incombat
+
+//Shield Block - 2+ enemies
+castspell:2565
+cooldown:5000;4
+rage>9
+level>15
+combatcount>1
+incombat
