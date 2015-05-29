@@ -8,7 +8,7 @@ _Work mostly like a Enhancement profile._
 **Buffs:**
 - Lightning shield when out of combat and not up
 - Will buff mainhand and offhand (Offhand need to remove some "//" in the profile.)
-- Rockbiter, Flametongue after lvl 10, and Frostbrand after lvl 20
+- Rockbiter, Flametongue after lvl 10, Frostbrand after lvl 20 And Windfury from lvl 30
 
 **Healing routines:**
 - Use Healing wave, Lesser healing wave after lvl 20
@@ -27,5 +27,9 @@ _Work mostly like a Enhancement profile._
 - Healing totem
 - Stoneskin totem before pulling
 - Searing totem in combat
-- Mana totem when out of battle and nothing to drink
-- Will cast lightning shield before this to just stand by if none other is available and really low on mana
+- Mana totem when out of battle and nothing to drink (or stand still)
+
+**Other:**
+- Use of manapotion if low on mana
+- Use of Healthpotion if really low on health
+- Use of useful scrolls
