@@ -86,7 +86,7 @@ rage<10
 castspell:71
 selfbuff!71
 incombat
-selfhp>40
+selfhp<30
 level>9
 rage<9
 cooldown:1000;1
