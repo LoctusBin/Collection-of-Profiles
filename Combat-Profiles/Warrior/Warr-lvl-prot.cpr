@@ -108,12 +108,25 @@ level>15
 combatcount>1
 incombat
 
-//Shield Wall
+//Shield Wall - 1 enemy
 castspell:871
 selfbuff!871
 selfbuff=71
 level>27
-cooldown:300000
+selfhp<30
+targethp>33
+cooldown:300000;5
+combatcount<2
+incombat
+
+//Shield Wall 2+ enemies
+castspell:871
+selfbuff!871
+selfbuff=71
+level>27
+selfhp<30
+cooldown:300000;5
+combatcount>1
 incombat
 
 //Sunder armor - if in group then remove the "//" under here
