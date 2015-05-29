@@ -108,6 +108,14 @@ level>15
 combatcount>1
 incombat
 
+//Shield Wall - Dont know the cooldown of this
+castspell:871
+selfbuff!871
+selfbuff=71
+level>27
+cooldown:60000
+incombat
+
 //Sunder armor - if in group then remove the "//" under here
 //
 // Jet to implement
@@ -238,13 +246,13 @@ nogcd
 distance<5
 level>19
 
-//Overpower - test, not working as intended, trying different stuff here.
-castspell:7384;7887;11584;11585
-selfbuff=7384;7887;11584;11585
+//Shield Slam
+castspell:23922;23923;23924;23925
+cooldown:6000
 distance<5
-combopoints>0
-cooldown:5000
-rage>5
+rage>19
+level>39
+incombat
 
 //heroic strike
 //you can remove "//" and "cast:29" if you dont want to use Overpower and revange
