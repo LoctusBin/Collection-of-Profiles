@@ -83,7 +83,7 @@ rage>10
 castspell:2687
 selfbuff=71
 selfhp>82
-targethp>63
+targethp>70
 incombat
 cooldown:60000;2
 rage<10
@@ -91,9 +91,10 @@ rage<10
 //Shield Block - 1 enemy
 castspell:2565
 selfbuff!2565
+selfbuff=71
 cooldown:5000;4
-targethp>20
-selfhp<90
+targethp>26
+selfhp<50
 rage>9
 level>15
 combatcount<2
@@ -102,7 +103,9 @@ incombat
 //Shield Block - 2+ enemies
 castspell:2565
 selfbuff!2565
+selfbuff=71
 cooldown:5000;4
+selfhp<70
 rage>9
 level>15
 combatcount>1
