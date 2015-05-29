@@ -111,13 +111,13 @@ selfbuff!324;325;905;945;8134;10431;10432
 mana>25
 level>7
 
-//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand
-castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury
+castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
 !mainhandbuffed
 
-//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand									<---- OFFHAND REMOVE THE "//" UNDER
+//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury	 					<---- OFFHAND REMOVE THE "//" UNDER
 //Remove the "//" on the 2 lines below if you dual wield.
-//castspell:8017;8018;8024;8027;8033;8038;10456;16355;16356
+//castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
 //!offhandbuffed
 
 
