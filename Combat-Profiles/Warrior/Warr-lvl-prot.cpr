@@ -1,7 +1,9 @@
-// Basic Prot warr stancedance warr.
+// Basic Prot stancedance warrior.
+// Spec: http://www.wowprovider.com/Old.aspx?talent=11215875_1_825c2o5p55250110520221051
+// You want your spec something around this, the "Tactical Mastery" in Arms are critical
+// to have if you are stancedancing.
 //
 //TODO:
-//- overpower spell. working on it - prob going to stay as macro
 //- Sunder armor as an option.
 
 //Heroic Strike, Overpower and Revenge in one Macro: (Need at lvl 12+)
@@ -85,6 +87,26 @@ targethp>63
 incombat
 cooldown:60000;2
 rage<10
+
+//Shield Block - 1 enemy
+castspell:2565
+selfbuff!2565
+cooldown:5000;4
+targethp>20
+selfhp<90
+rage>9
+level>15
+combatcount<2
+incombat
+
+//Shield Block - 2+ enemies
+castspell:2565
+selfbuff!2565
+cooldown:5000;4
+rage>9
+level>15
+combatcount>1
+incombat
 
 //Sunder armor - if in group then remove the "//" under here
 //
@@ -245,20 +267,3 @@ autoattacking
 nogcd
 level<12
 
-//Shield Block - 1 enemy
-castspell:2565
-cooldown:5000;4
-targethp>20
-selfhp<90
-rage>9
-level>15
-combatcount<2
-incombat
-
-//Shield Block - 2+ enemies
-castspell:2565
-cooldown:5000;4
-rage>9
-level>15
-combatcount>1
-incombat
