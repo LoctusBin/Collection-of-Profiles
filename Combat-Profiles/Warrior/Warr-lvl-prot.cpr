@@ -108,12 +108,12 @@ level>15
 combatcount>1
 incombat
 
-//Shield Wall - Dont know the cooldown of this
+//Shield Wall
 castspell:871
 selfbuff!871
 selfbuff=71
 level>27
-cooldown:60000
+cooldown:300000
 incombat
 
 //Sunder armor - if in group then remove the "//" under here
