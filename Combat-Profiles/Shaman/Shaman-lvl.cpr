@@ -71,14 +71,16 @@ level>25
 selfbuff!5677;10491;10493;10494
 mana<59
 afterloot
+breakonfullmana
 
 // If not stand still and rest
 cast:20
-channelingtime:24000
+channelingtime:20000
 breakoncombat
 !incombat
-mana<30
+mana<40
 afterloot
+breakonfullmana
 
 //Spirit Scroll
 use:spirit scroll
