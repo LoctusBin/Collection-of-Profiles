@@ -171,9 +171,19 @@ combatcount>2
 level>11
 castonce
 
-
 //====================================================================================
-// DMG SPELLS
+// PULLING
+
+// Ghost Wolf - dont use in battle #1 in battle
+castspell:2645
+selfbuff=2645
+incombat
+
+// Ghost Wolf - dont use in battle #2 pulling
+castspell:2645
+selfbuff=2645
+distance<30
+!incombat
 
 //Lightning Bolt
 castspell:403;529;548;915;943;6041;10391;10392;15207;15208
@@ -182,6 +192,9 @@ distance>5
 !incombat
 mana>10
 castonce
+
+//====================================================================================
+// DMG SPELLS
 
 //Lightning Bolt on Clearcasting
 castspell:403;529;548;915;943;6041;10391;10392;15207;15208
@@ -221,3 +234,12 @@ distance<5
 mana>10
 level>39
 cooldown:20000
+
+
+//====================================================================================
+// Wolf when travelling - test
+
+//Ghost Wolf - use when not in battle
+castspell:2645
+selfbuff!2645
+!incombat
