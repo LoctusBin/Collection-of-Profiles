@@ -35,9 +35,7 @@ The frost version is in alpha.
 
 
 ###**HOW TO USE:**  
-NB! Remember to go to trainer to get newest conjure, no more need to edit the profile (will update/fix in next version of VB)
-You will also need to edit scorch if you think it is spamming it and/or you dont have the talent, or if you place the sheep macro another place.  
-Every line you will need to edit are marked and easy to find.
+You will need to edit scorch if you think it is spamming and/or you dont have the talent, or if you place the sheep macro another place. Every line you will need to edit are marked and easy to find.
 
 Make the sheep macro and put it in bar 2 slot 9. or edit in profile.  
 This will target next target, cast sheep then go back to your last target.
