@@ -276,6 +276,7 @@ castspell:12051
 channelingtime:8000
 cooldown:480000
 triggeredby:5
+level>19
 
 //Frost Nova - On Mana Low
 castspell:122;865;6131;10231;10230;6132;1225;1194
