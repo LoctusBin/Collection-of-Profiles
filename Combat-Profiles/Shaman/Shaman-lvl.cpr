@@ -60,6 +60,7 @@ breakoncombat
 !incombat
 mana<62
 afterloot
+breakonfullmana
 
 //if not stay put and summon a mana totem and stay put? only if not casted.
 castspell:5675;10495;16190;17354;17359
@@ -85,7 +86,6 @@ use:spirit scroll
 
 //Stamina Scroll
 use:stamina scroll
-selfbuff!1243;1244;1245;2791;10937;10938
 !incombat
 
 //Strength Scroll
@@ -98,7 +98,6 @@ use:agility scroll
 
 //Intellect Scroll
 use:intellect scroll
-selfbuff!1459;1460;1461;1475;10156;10157
 !incombat
 
 //====================================================================================
