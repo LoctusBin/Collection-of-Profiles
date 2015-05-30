@@ -133,7 +133,7 @@ nogcd
 
 
 //====================================================================================
-// TOTEMS
+// TOTEMS - Some are placed elsewhere
 
 //Healing Totem
 castspell:5394;6375:6377;10462;10463;25567
@@ -148,13 +148,6 @@ selfbuff!5677;10491;10493;10494;5672;6371;6372;10461
 mana<60
 incombat
 level>25
-
-//Stoneskin Totem
-castspell:8071;8154;8155;10406;10407;10408
-distance<30
-mana>10
-level>3
-selfbuff!8072;8156;5187;10403;10404;10405
 
 //Searing Totem
 castspell:3599;6363;6364;6365;10437;10438
@@ -178,12 +171,21 @@ castonce
 castspell:2645
 selfbuff=2645
 incombat
+level>19
 
 // Ghost Wolf - dont use in battle #2 pulling
 castspell:2645
 selfbuff=2645
 distance<30
 !incombat
+level>19
+
+//Stoneskin Totem
+castspell:8071;8154;8155;10406;10407;10408
+distance<30
+mana>10
+level>3
+selfbuff!8072;8156;5187;10403;10404;10405
 
 //Lightning Bolt
 castspell:403;529;548;915;943;6041;10391;10392;15207;15208
@@ -192,6 +194,7 @@ distance>5
 !incombat
 mana>10
 castonce
+
 
 //====================================================================================
 // DMG SPELLS
@@ -243,3 +246,4 @@ cooldown:20000
 castspell:2645
 selfbuff!2645
 !incombat
+level>19
