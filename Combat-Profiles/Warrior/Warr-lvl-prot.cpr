@@ -264,6 +264,7 @@ level>19
 
 //Shield Slam
 castspell:23922;23923;23924;23925
+selfbuff=71
 cooldown:6000
 distance<5
 rage>19
