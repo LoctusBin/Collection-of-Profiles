@@ -82,7 +82,7 @@ cooldown:120000
 haveitem<1:trigger:4
 level>27
 
-//triggered drink
+//Triggered drink
 use:drink
 nostand
 !incombat
@@ -91,8 +91,9 @@ channelingtime:19000
 breakoncombat
 triggeredby:1
 haveitem<3:trigger:2
+level>3
 
-//eat and drink
+//Eat and drink
 use:food
 selfhp<70
 mana<60
@@ -104,8 +105,9 @@ nogcd
 triggers:1
 haveitem<3:trigger:3
 afterloot
+level>5
 
-//eat
+//Eat
 use:food
 selfhp<65
 !incombat
@@ -116,8 +118,9 @@ afterloot
 nostand
 nogcd
 breakonfullhp
+level>5
 
-// drink
+//Drink
 use:drink
 mana<53
 !incombat
@@ -128,6 +131,32 @@ afterloot
 nostand
 nogcd
 breakonfullmana
+level>3
+
+//Eat - pre conjure
+use:food
+selfhp<30
+!incombat
+channelingtime:10000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullhp
+level<6
+
+//Drink - pre conjure
+use:drink
+mana<30
+!incombat
+channelingtime:10000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+level<4
+
 
 //Spirit Scroll
 use:spirit scroll
@@ -343,14 +372,14 @@ chance:78
 //Wand - just in case
 castspell:5019
 distance<30
-mana<10
+mana<15
 !wandcasting
 !autoattacking
 
 //Attack - if no wand
 castspell:6603
 distance<5
-mana<10
+mana<15
 !wandcasting
 !autoattacking
 nogcd
