@@ -30,6 +30,7 @@ selfhp<34
 channelingtime:20000
 breakoncombat
 afterloot
+breakonfullhp
 
 //Bandage up - fastest way
 use:bandage
@@ -39,6 +40,7 @@ channelingtime:8000
 cooldown:60000
 breakoncombat
 afterloot
+breakonfullhp
 
 //Eat - in case.
 use:food
@@ -47,6 +49,7 @@ selfhp<55
 channelingtime:20000
 breakoncombat
 afterloot
+breakonfullhp
 
 //Rest, if out of food and bandage
 cast:20
@@ -55,10 +58,10 @@ channelingtime:15000
 !incombat
 breakoncombat
 afterloot
+breakonfullhp
 
 //Stamina Scroll
 use:stamina scroll
-selfbuff!1243;1244;1245;2791;10937;10938
 !incombat
 
 //Strength Scroll

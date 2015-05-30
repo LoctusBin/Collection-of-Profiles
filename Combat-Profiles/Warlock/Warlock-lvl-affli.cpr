@@ -75,6 +75,7 @@ castspell:17767;17850;17851;17852;17853;17854
 !incombat
 petactive
 pethealth<60
+petmana>40
 channelingtime:10000
 cooldown:15000
 breakoncombat
@@ -98,6 +99,7 @@ mana<20
 channelingtime:15000
 breakoncombat
 level<5
+breakonfullmana
 
 // Life Tap
 castspell:1454;1455;1456;11687;11688;11689
@@ -171,15 +173,17 @@ level>5
 use:food
 selfhp<50
 !incombat
-channelingtime:15000
+channelingtime:17000
 breakoncombat
+breakonfullhp
 
 // If no food: just wait for health
 cast:20
 selfhp<45
 !incombat
-channelingtime:8000
+channelingtime:16000
 breakoncombat
+breakonfullhp
 
 //Spirit Scroll
 use:spirit scroll
@@ -187,12 +191,10 @@ use:spirit scroll
 
 //Stamina Scroll
 use:stamina scroll
-selfbuff!1243;1244;1245;2791;10937;10938
 !incombat
 
 //Intellect Scroll
 use:intellect scroll
-selfbuff!1459;1460;1461;1475;10156;10157
 !incombat
 
 
