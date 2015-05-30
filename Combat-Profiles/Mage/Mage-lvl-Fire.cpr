@@ -31,6 +31,7 @@ channelingtime:8000
 cooldown:480000
 breakoncombat
 aftercombat
+level>19
 
 //Blink - After frost nova
 //Not working/doing what i want to atm.
@@ -318,6 +319,7 @@ distance>6
 distance<11
 backpedal:1000
 cooldown:25000;2
+level>9
 
 //===============/
 
