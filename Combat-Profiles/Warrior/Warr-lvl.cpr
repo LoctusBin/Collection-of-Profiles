@@ -70,19 +70,18 @@ use:agility scroll
 
 //Battle Shout - always up 6673;5242;6192;11549;11550;11551;5289
 castspell:5242
-selfbuff=71
 selfbuff!5242
 rage>10
 
-//Bloodrage - in combat and prot
+//Bloodrage - in combat
 castspell:2687
 selfhp>82
 targethp>63
 incombat
-cooldown:60000;2
+cooldown:60000
 rage<10
 
-//Set defence stance low health
+//Set defence stance - low health
 castspell:71
 selfbuff!71
 incombat
@@ -92,12 +91,66 @@ rage<9
 cooldown:1000;1
 nogcd
 
+//Set defence stance - 3+ enemies
+castspell:71
+selfbuff!71
+incombat
+level>9
+rage<9
+cooldown:1000;1
+combatcount>2
+nogcd
+
 //Set combat stance - Always up
 castspell:2457
 selfbuff!2457
 !incombat
 cooldown:1000;1
 nogcd
+
+//Shield Block - 1 enemy
+castspell:2565
+selfbuff!2565
+selfbuff=71
+cooldown:5000;4
+targethp>26
+selfhp<50
+rage>9
+level>15
+combatcount<2
+incombat
+
+//Shield Block - 2+ enemies
+castspell:2565
+selfbuff!2565
+selfbuff=71
+cooldown:5000;4
+selfhp<70
+rage>9
+level>15
+combatcount>1
+incombat
+
+//Shield Wall - 1 enemy
+castspell:871
+selfbuff!871
+selfbuff=71
+level>27
+selfhp<30
+targethp>33
+cooldown:300000;5
+combatcount<2
+incombat
+
+//Shield Wall 2+ enemies
+castspell:871
+selfbuff!871
+selfbuff=71
+level>27
+selfhp<30
+cooldown:300000;5
+combatcount>1
+incombat
 
 
 //====================================================================================
@@ -111,7 +164,6 @@ distance<25
 cooldown:16000
 !incombat
 level>3
-triggers:1
 
 
 //====================================================================================
@@ -134,8 +186,8 @@ level>23
 castspell:772;6546;6547;6548;11573;11574
 targetbuff!772;6546;6547;6548;11573;11574
 targethp>30
-rage>10
-distance<5
+rage>9
+distance<6
 level>3
 
 //bloodthirst
@@ -173,7 +225,6 @@ targethp>20
 rage>30
 autoattacking
 nogcd
-chance:50
 level>11
 
 //heroic strike till lvl 12
