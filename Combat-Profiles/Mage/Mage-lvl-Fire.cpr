@@ -42,167 +42,30 @@ aftercombat
 
 //=====================================================================
 // CONJURE
-// This is from Bin4ry. will change this out when the new version of VB is out
-// But you guys dont need to edit the profile from time to time. just remember trainer!
 
-//Conjure Mana Gem Rank 1
-castspell:759
-mana>40
+//Conjure Mana Gem
+castspell:759;3552;10053;10054
+mana>25
+!incombat
+triggeredby:4
 cooldown:4000
-haveitem:5514<1
 level>27
-level<38
-!incombat
 
-//Conjure Mana Gem Rank 2
-castspell:3552
-mana>40
-cooldown:4000
-haveitem:5513<1
-level>37
-level<48
-!incombat
-
-//Conjure Mana Gem Rank 3
-castspell:10053
-mana>40
-cooldown:4000
-haveitem:8007<1
-level>47
-level<58
-!incombat
-
-//Conjure Mana Gem Rank 4
-castspell:10054
-mana>40
-cooldown:4000
-haveitem:8008<1
-level>57
-!incombat
-
-//Conjure Food Rank 1
-castspell:587	
+//conjure food
+castspell:587;597;990;6129;10144;10145;28612
 !incombat
 breakoncombat
-haveitem:5349<3
+triggeredby:3
 cooldown:3500
 level>5
-level<12
- 		 
-//Conjure Food Rank 2
-castspell:597
-!incombat
-breakoncombat
-haveitem:1113<3
-cooldown:3500
-level>11
-level<22
 
-//Conjure Food Rank 3
-castspell:990
+//conjure water
+castspell:5504;5505;5506;6127;10138;10139;10140
 !incombat
 breakoncombat
-haveitem:1114<3
-cooldown:3500
-level>21
-level<32
-
-//Conjure Food Rank 4
-castspell:6129
-!incombat
-breakoncombat
-haveitem:1487<3
-cooldown:3500
-level>31
-level<42
-
-//Conjure Food Rank 5
-castspell:10144
-!incombat
-breakoncombat
-haveitem:8075<3
-cooldown:3500
-level>41
-level<52
-
-//Conjure Food Rank 6
-castspell:10145
-!incombat
-breakoncombat
-haveitem:8076<3
-cooldown:3500
-level>51
-level<60
-
-//Conjure Food Rank 7
-castspell:28612
-!incombat
-breakoncombat
-haveitem:22895<3
-cooldown:3500
-level>59
-
-//Conjure Water Rank 1
-castspell:5504
-!incombat
-breakoncombat
-haveitem:5350<3
+triggeredby:2
 cooldown:3500
 level>3
-level<10
-
-//Conjure Water Rank 2
-castspell:5505
-!incombat
-breakoncombat
-haveitem:2288<3
-cooldown:3500
-level>9
-level<20
-
-//Conjure Water Rank 3
-castspell:5506
-!incombat
-breakoncombat
-haveitem:2136<3
-cooldown:3500
-level>19
-level<30
-
-//Conjure Water Rank 4
-castspell:6127
-!incombat
-breakoncombat
-haveitem:3772<3
-cooldown:3500
-level>29
-level<40
-
-//Conjure Water Rank 5
-castspell:10138
-!incombat
-breakoncombat
-haveitem:8077<3
-cooldown:3500
-level>39
-level<50
-
-//Conjure Water Rank 6
-castspell:10139
-!incombat
-breakoncombat
-haveitem:8078<3
-cooldown:3500
-level>49
-level<60
-
-//Conjure Water Rank 7
-castspell:10140
-!incombat
-breakoncombat
-haveitem:8079<3
-cooldown:3500
-level>59
 
 
 //=====================================================================
@@ -215,6 +78,7 @@ mana<27
 targethp>20
 incombat
 cooldown:120000
+haveitem<1:trigger:4
 level>27
 
 //triggered drink
@@ -225,7 +89,7 @@ nogcd
 channelingtime:19000
 breakoncombat
 triggeredby:1
-//haveitem<3:trigger:2
+haveitem<3:trigger:2
 
 //eat and drink
 use:food
@@ -234,9 +98,10 @@ mana<60
 !incombat
 breakoncombat
 cooldown:1500
+nostand
 nogcd
 triggers:1
-//haveitem<3:trigger:3
+haveitem<3:trigger:3
 afterloot
 
 //eat
@@ -245,8 +110,11 @@ selfhp<65
 !incombat
 channelingtime:19000
 breakoncombat
-//haveitem<3:trigger:3
+haveitem<3:trigger:3
 afterloot
+nostand
+nogcd
+breakonfullhp
 
 // drink
 use:drink
@@ -254,8 +122,11 @@ mana<53
 !incombat
 channelingtime:19000
 breakoncombat
-//haveitem<3:trigger:2
+haveitem<3:trigger:2
 afterloot
+nostand
+nogcd
+breakonfullmana
 
 //Spirit Scroll
 use:spirit scroll
@@ -263,8 +134,8 @@ use:spirit scroll
 
 //Stamina Scroll
 use:stamina scroll
-selfbuff!1243;1244;1245;2791;10937;10938
 !incombat
+
 
 //=====================================================================
 // BUFF UP!!!
@@ -398,6 +269,24 @@ level>29
 
 //===============/
 // SOME FROST NOVA REQ/
+
+//Evocation
+castspell:12051
+channelingtime:8000
+cooldown:480000
+triggeredby:5
+
+//Frost Nova - On Mana Low
+castspell:122;865;6131;10231;10230;6132;1225;1194
+mana<20
+selfhp>50
+targethp>30
+distance<7
+backpedal:1400
+cooldown:25000;2
+level>19
+triggers:5
+incombat
 
 //Frost nova - then walk back a bit
 castspell:122;865;6131;10231;10230;6132;1225;1194
