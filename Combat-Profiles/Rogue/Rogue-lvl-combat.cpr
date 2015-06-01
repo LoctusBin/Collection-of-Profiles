@@ -1,8 +1,26 @@
 // A Rogue Combat profile from VanillaBot's Default profile.
-// With improved eat handling +++++
-//
+
+// CLASS   : Rogue
+// SPEC    : Combat
+// TALENTS : No Specific
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Write here about macros etc.
+
+// CREDITS:
+// Made By: Loctus
+// VanillaBot's Default profile
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
 
 gcd:1000
+
+
+//====================================================================================
+// POTIONS
 
 //health potion
 use:health potion

@@ -1,25 +1,35 @@
-// Basic Prot stancedance warrior.
-// Spec: http://www.wowprovider.com/Old.aspx?talent=11215875_1_825c2o5p55250110520221051
-// You want your spec something around this, the "Tactical Mastery" in Arms are critical
-// to have if you are stancedancing.
+// Prot stancedance warrior.
+
+// CLASS   : Warrior
+// SPEC    : Protection
+// TALENTS : http://www.wowprovider.com/Old.aspx?talent=11215875_1_825c2o5p55250110520221051
+//           "Tactical Mastery" in Arms are critical to have here because of stancedanceing.
+//           Other than this you can play around a bit with the talents.
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
 //
-//TODO:
-//- Sunder armor as an option.
+// Heroic Strike, Overpower and Revenge in one Macro: (Need at lvl 12+)
+// This is set on bar 2 slot 9.
+//     /cast Heroic Strike
+//     /cast [stance:1] Overpower; [stance:2] Revenge
 
-//Heroic Strike, Overpower and Revenge in one Macro: (Need at lvl 12+)
-//This is set on bar 2 slot 9.
-// /cast Heroic Strike
-// /cast [stance:1] Overpower; [stance:2] Revenge
+// CREDITS:
+// Made By: Loctus
 
-//setting global cooldown (in milliseconds)
+
+//====================================================================================
+// GLOBAL COOLDOWN
 gcd:1500
 
+
+//====================================================================================
+// POTIONS
 
 //health potion
 use:health potion
 selfhp<15
 incombat
-
 
 
 //====================================================================================
@@ -277,7 +287,7 @@ level>39
 incombat
 
 //heroic strike
-//you can remove "//" and "cast:29" if you dont want to use Overpower and revange
+//you can remove "//" and "cast:29" if you dont want to use Overpower and revenge macro
 //castspell:78;284;285;1608;11564;11565;11566;25286
 cast:29
 distance<5

@@ -1,14 +1,28 @@
-// Basic warr.
+// Basic DPS warr.
+
+// CLASS   : Warrior
+// SPEC    : Arms or Fury
+// TALENTS : Your choice
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
 //
+// Heroic Strike and Overpower in one Macro: (Need at lvl 12+)
+// This is set on bar 2 slot 9.
+//    /cast Heroic Strike
+//    /cast Overpower
 
-//Heroic Strike, Overpower and Revenge in one Macro: (Need at lvl 12+)
-//This is set on bar 2 slot 9.
-// /cast Heroic Strike
-// /cast Overpower
+// CREDITS:
+// Made By: Loctus
 
-//setting global cooldown (in milliseconds)
+
+//====================================================================================
+// GLOBAL COOLDOWN
 gcd:1500
 
+
+//====================================================================================
+// POTIONS
 
 //health potion
 use:health potion

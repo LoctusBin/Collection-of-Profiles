@@ -1,9 +1,28 @@
-//Nik's affliction warlock profile
-//Modified by Loctus to be more userfriendly for all
-//Added imp, lvl req. and removed some race specific spells
-//Also tried to sort the profile a little.
+// Modified Nik's affliction warlock profile
+
+// CLASS   : Warlock
+// SPEC    : Affliction
+// TALENTS : No specific
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+//
+// MACRO: /run PetDismiss();
+// To get rid of imp and summon voidwalker, put on bar 2 slot 9
+
+// CREDITS:
+// Modified a lot by Loctus
+// Nik's wonderful profile
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
 
 gcd:1500
+
+
+//====================================================================================
+// POTIONS
 
 //Health Pot - just in case
 use:health potion
@@ -22,6 +41,7 @@ incombat
 // Demon skin/armor
 castspell:687;696;706;1086;11733;11734;11735
 selfbuff!687;696;706;1086;11733;11734;11735
+!incombat
 
 
 //=====================================================================
@@ -355,7 +375,7 @@ distance<30
 //=====================================================================
 // AUTO ATTACK
 
-//Wand - just in case
+//Wand - if no mana
 castspell:5019
 distance<30
 mana<10

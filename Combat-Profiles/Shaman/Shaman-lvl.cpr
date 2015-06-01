@@ -1,9 +1,25 @@
-// Shaman leveling profile, mostly set up for Enhancement/ Low mana use
-// Made by: Loctus
-// Need to remove some "//" if you are using dual wield. look down in the profile. line 55.
+// Shaman levelling profile, mostly set up for Enhancement/ Low mana use
 
-//Global cooldown
+// CLASS   : Shaman
+// SPEC    : Enhancement (you does not need to be in this spec tho.)
+// TALENTS : Nothing specific
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Need to remove some "//" if you are using dual wield. look down in the profile. line 100.
+
+// CREDITS:
+// Made By: Loctus
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+
 gcd:1500
+
+
+//====================================================================================
+// POTIONS
 
 //Health Pot - just in case
 use:health potion

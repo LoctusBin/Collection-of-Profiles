@@ -15,6 +15,7 @@
 //====================================================================================
 // GLOBAL COOLDOWN
 // (1000 on druid feral and rogues)
+
 gcd:1500
 
 
@@ -38,10 +39,19 @@ incombat
 //Heals here if you got healing spells
 
 
+
 //====================================================================================
 // BUFF UP!!
 
 // Everything that got with buffing you up
+
+
+
+//=====================================================================
+// PET stuff
+
+// If you got a pet you put spells etc. for it here.
+
 
 
 //====================================================================================
@@ -157,10 +167,12 @@ use:intellect scroll
 // The spells here that you use just before combat and in pulling the enemy
 
 
+
 //====================================================================================
 // DMG SPELLS
 
 // Every other dmg spell and rotation goes here.
+
 
 
 //=====================================================================

@@ -1,44 +1,38 @@
-// This profile is tweaked and modified from other profiles, have tried to rep them where needed.
-// sry if you are left out :( this is a profile for fire mage lvling with a lot of dps as i can figure out.
-// Put together by: Loctus
-//
+// Powerful Fire Mage Profile
+
+// CLASS   : Mage
+// SPEC    : Fire
+// TALENTS : No specific
+
+// PROFILE INFO:
 // If spams scorch allot and you still have not spec. for improved scorch then read down and tweak it :D
 // it is marked as "<--- SCORCH TWEAKING" like the rest :)
 //
 // Also remember sheep macro on bar 2 slot 9. or edit down below.
 // SHEEP MACRO:
-// /script TargetNearestEnemy();
-// /cast Polymorph
-// /script TargetLastTarget()
-//
+//     /script TargetNearestEnemy();
+//     /cast Polymorph
+//     /script TargetLastTarget()
+
+// CREDITS:
+// Made By: Loctus
+// Squeakz - how to use food and water at the same time
+// Kystanley818 - Inspiration on dmg spell rotation
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
 
 gcd:1500
 
-//=============================
-// Just some before stuff
+
+//====================================================================================
+// POTIONS
 
 //Health Pot - just in case
 use:health potion
 selfhp<15
 incombat
-
-//Evocation
-castspell:12051
-selfhp>70
-mana<25
-!incombat
-channelingtime:8000
-cooldown:480000
-breakoncombat
-aftercombat
-level>19
-
-//Blink - After frost nova
-//Not working/doing what i want to atm.
-//castspell:12051
-//cooldown:480000
-//triggeredby:4
-//level>19
 
 
 //=====================================================================
@@ -125,8 +119,18 @@ level>3
 
 
 //=====================================================================
-// FOOD AND WATER and stuff
-// water and food at same time from: Squeakz, added lvl and edited  a lot
+// CONSUMEABLES
+
+//Evocation
+castspell:12051
+selfhp>70
+mana<25
+!incombat
+channelingtime:8000
+cooldown:480000
+breakoncombat
+aftercombat
+level>19
 
 //Mana gem
 use:mana gem
@@ -252,7 +256,6 @@ castonce
 
 //=====================================================================
 // DMG SPELLS
-// some From: Kystanley818, tweaked by Loctus
 
 //Scorch - Killing blow
 castspell:2948;8444;8445;8446;10205;10206;10207
