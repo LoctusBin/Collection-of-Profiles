@@ -1,9 +1,19 @@
-// Combat Profile Template
+// Profile name?
+
+// CLASS   : Class Name
+// SPEC    : Class Spec
+// TALENTS : Tallent info/link
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Write here about macros etc.
+
+// CREDITS:
 // Template Made By: Loctus
 
 
 //====================================================================================
-// Global cooldown
+// GLOBAL COOLDOWN
 // (1000 on druid feral and rogues)
 gcd:1500
 
