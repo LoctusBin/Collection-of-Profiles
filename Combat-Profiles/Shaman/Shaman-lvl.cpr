@@ -256,7 +256,7 @@ chance:84
 //Stormstrike
 castspell:17364
 distance<5
-mana>10
+mana>25
 level>39
 cooldown:20000
 
