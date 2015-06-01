@@ -1,0 +1,220 @@
+// Shadow Priest DPS profile.
+
+// CLASS:    Priest
+// SPEC:     Shadow
+// TALENTS:  Do as you want :)
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// A Simple profile to max out the DPS as a priest while grinding/questing.
+
+// CREDITS:
+// Profile Made By: Loctus
+// Default priest profile
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+gcd:1500
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// HEALS
+
+//Renew
+castspell:139;6074;6075;6076;6077;6078;10927;10928;10929;25315
+selfbuff!139;6074;6075;6076;6077;6078;10927;10928;10929;25315
+selfhp<80
+mana>10
+
+//Heal (long!)
+castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
+selfhp<40
+mana>15
+
+//Heal (long!)
+castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
+selfhp<70
+mana>15
+!incombat
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Inner Fire
+castspell:588;7128;602;1006;10951;10952
+selfbuff!588;7128;602;1006;10951;10952
+!incombat
+mana>5
+level>11
+
+//Fortitude
+castspell:1243;1244;1245;2791;10937;10938
+selfbuff!1243;1244;1245;2791;10937;10938
+mana>40
+!incombat
+
+//Power word Shield
+castspell:17;592;600;3747;6065;6066;10898;10899;10900;10901
+incombat
+mana>15
+selfbuff!17;592;600;3747;6065;6066;10898;10899;10900;10901;6788
+level>5
+
+//Power Infusion
+castspell:10060
+incombat
+mana>50
+combatcount>1
+selfbuff!10060
+level>39
+
+
+//====================================================================================
+// CONSUMEABLES
+
+//Drink
+use:drink
+mana<53
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+
+//Stand still and rest - Mana
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<50
+afterloot
+breakonfullmana
+
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+!incombat
+
+
+//====================================================================================
+// PULLING
+
+//Power Word Shield
+castspell:17;592;600;3747;6065;6066;10898;10899;10900;10901
+!incombat
+mana>15
+distance<30
+castonce
+selfbuff!17;592;600;3747;6065;6066;10898;10899;10900;10901;6788
+level>5
+
+//Vampiric Embrace
+castspell:15286
+targetbuff!15286
+targethp>75
+distance<30
+cooldown:10000
+
+//Holy Fire
+castspell:14914;15262;15263;15264;15265;15266;15267;15261
+!incombat
+distance<30
+mana>40
+castonce
+level>19
+
+//Smite - pulling
+castspell:585;591;598;984;1004;6060;10933;10934
+mana>10
+distance<30
+castonce
+!incombat
+
+
+//====================================================================================
+// DMG SPELLS
+
+//Devouring Plague
+castspell:2944;19276;19277;19278;19279;19280
+cooldown:180000
+selfhp<80
+targethp>40
+distance<30
+mana>40
+level>19
+
+//Mind Blast
+castspell:8092;8102;8103;8104;8105;8106;10945;10946;10947
+mana>10
+cooldown:5500
+distance<30
+level>9
+
+//SW:P
+castspell:589;594;970;992;2767;10892;10893;10894
+mana>10
+targetbuff!589;594;970;992;2767;10892;10893;10894
+distance<30
+targethp>25
+level>3
+
+//Mind Flay - When shield is up
+castspell:15407;17311;17312;17313;17314;18807
+targetbuff!15407;17311;17312;17313;17314;18807
+distance<20
+mana>10
+selfbuff=17;592;600;3747;6065;6066;10898;10899;10900;10901
+channelingtime:3000
+level>19
+
+//Mana Burn - Test phase
+castspell:8129;8131;10874;10875;10876
+mana<30
+distance<30
+level>23
+
+//Smite
+castspell:585;591;598;984;1004;6060;10933;10934
+mana>10
+distance<30
+level<20
+
+
+//=====================================================================
+// AUTO ATTACK
+
+//Wand - if no mana
+castspell:5019
+distance<30
+mana<15
+!wandcasting
+!autoattacking
+
+//Attack - if no wand
+castspell:6603
+distance<5
+mana<15
+!wandcasting
+!autoattacking
+nogcd
