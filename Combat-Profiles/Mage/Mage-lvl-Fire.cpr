@@ -42,6 +42,61 @@ level>19
 
 
 //=====================================================================
+// BUFF UP!!!
+
+//Ice Barrier - In combat, up alot
+castspell:11426;13031;13032;13033
+selfhp<85
+incombat
+selfbuff!11426;13031;13032;13033
+cooldown:30000;1
+level>39
+
+//Ice Barrier - Out of combat, before pulling
+castspell:11426;13031;13032;13033
+!incombat
+selfbuff!11426;13031;13032;13033
+cooldown:30000;1
+distance<35
+level>39
+
+//Frost Armor, 30 frost armor
+castspell:168;7300;7301;7302;7320;10219;10220
+mana>70
+selfbuff!168;7300;7301;7302;7320;10219;10220
+!incombat
+
+//Intellect
+castspell:1459;1460;1461;1475;10156;10157
+mana>70
+selfbuff!1459;1460;1461;1475;10156;10157
+!incombat
+
+//Dampen magic - Help with not loosing so much health against spell casters
+castspell:604;8450;8451;10173;10174
+mana>70
+selfbuff!604;8450;8451;10173;10174
+!incombat
+level>11
+
+//Mana Shield (crise!)
+castspell:1463;8494;8495;10191;10193
+selfhp<20
+mana>25
+selfbuff!1463;8494;8495;10191;10193;11426;13031;13032;13033
+incombat
+level>19
+
+//Combustion
+castspell:11129
+cooldown:180000
+mana>60
+selfbuff!11129
+!incombat
+level>39
+
+
+//=====================================================================
 // CONJURE
 
 //Conjure Mana Gem
@@ -165,61 +220,6 @@ use:spirit scroll
 //Stamina Scroll
 use:stamina scroll
 !incombat
-
-
-//=====================================================================
-// BUFF UP!!!
-
-//Ice Barrier - In combat, up alot
-castspell:11426;13031;13032;13033
-selfhp<85
-incombat
-selfbuff!11426;13031;13032;13033
-cooldown:30000;1
-level>39
-
-//Ice Barrier - Out of combat, before pulling
-castspell:11426;13031;13032;13033
-!incombat
-selfbuff!11426;13031;13032;13033
-cooldown:30000;1
-distance<35
-level>39
-
-//Frost Armor, 30 frost armor
-castspell:168;7300;7301;7302;7320;10219;10220
-mana>70
-selfbuff!168;7300;7301;7302;7320;10219;10220
-!incombat
-
-//Intellect
-castspell:1459;1460;1461;1475;10156;10157
-mana>70
-selfbuff!1459;1460;1461;1475;10156;10157
-!incombat
-
-//Dampen magic - Help with not loosing so much health against spell casters
-castspell:604;8450;8451;10173;10174
-mana>70
-selfbuff!604;8450;8451;10173;10174
-!incombat
-level>11
-
-//Mana Shield (crise!)
-castspell:1463;8494;8495;10191;10193
-selfhp<20
-mana>25
-selfbuff!1463;8494;8495;10191;10193;11426;13031;13032;13033
-incombat
-level>19
-
-//Combustion
-castspell:11129
-cooldown:180000
-mana>60
-selfbuff!11129
-!incombat
-level>39
 
 
 //=====================================================================

@@ -20,57 +20,6 @@ use:health potion
 selfhp<15
 incombat
 
-//====================================================================================
-// CONSUMABLES
-
-//Eat - if very low on health
-use:food
-selfhp<34
-!incombat
-channelingtime:20000
-breakoncombat
-afterloot
-breakonfullhp
-
-//Bandage up - fastest way
-use:bandage
-selfhp<60
-!incombat
-channelingtime:8000
-cooldown:60000
-breakoncombat
-afterloot
-breakonfullhp
-
-//Eat - in case.
-use:food
-selfhp<55
-!incombat
-channelingtime:20000
-breakoncombat
-afterloot
-breakonfullhp
-
-//Rest, if out of food and bandage
-cast:20
-selfhp<55
-channelingtime:15000
-!incombat
-breakoncombat
-afterloot
-breakonfullhp
-
-//Stamina Scroll
-use:stamina scroll
-!incombat
-
-//Strength Scroll
-use:strength Scroll
-!incombat
-
-//Agility Scroll
-use:agility scroll
-!incombat
 
 
 //====================================================================================
@@ -139,6 +88,59 @@ incombat
 //
 // Jet to implement
 //
+
+
+//====================================================================================
+// CONSUMABLES
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Eat - in case.
+use:food
+selfhp<55
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Rest, if out of food and bandage
+cast:20
+selfhp<55
+channelingtime:15000
+!incombat
+breakoncombat
+afterloot
+breakonfullhp
+
+//Stamina Scroll
+use:stamina scroll
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
 
 
 //====================================================================================

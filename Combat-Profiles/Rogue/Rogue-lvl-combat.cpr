@@ -11,6 +11,26 @@ incombat
 
 
 //====================================================================================
+// BUFF
+
+//evasion
+castspell:5277
+selfhp<30
+targethp>25
+cooldown:210000
+nogcd
+level>7
+
+//kick
+castspell:1771
+enemycasting
+incombat
+distance<5
+energy>25
+level>11
+
+
+//====================================================================================
 // CONSUMABLES
 
 //Eat - if very low on health
@@ -62,26 +82,6 @@ use:strength Scroll
 //Agility Scroll
 use:agility scroll
 !incombat
-
-
-//====================================================================================
-// BUFF
-
-//evasion
-castspell:5277
-selfhp<30
-targethp>25
-cooldown:210000
-nogcd
-level>7
-
-//kick
-castspell:1771
-enemycasting
-incombat
-distance<5
-energy>25
-level>11
 
 
 //====================================================================================
