@@ -1,0 +1,295 @@
+// Standard hunter profile
+
+// CLASS   : Hunter
+// SPEC    : No Specific atm.
+// TALENTS : No Specific
+
+// PROFILE INFO:
+// As for now you need to feed your pet yourself.
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+
+// CREDITS:
+// Made By: Loctus
+// Bin4ry for a lot of ideas
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+
+gcd:1500
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Aspect of the Hawk - Monkey before this
+castspell:13163;25296;14322;14321;14320;14319;14318;13165
+selfbuff!13163;25296;14322;14321;14320;14319;14318;13165
+!incombat
+level>3
+
+//trueshot aura
+castspell:19506;20905;20906
+selfbuff!19506;20905;20906
+!incombat
+level>39
+
+
+//=====================================================================
+// PET stuff
+
+//call pet
+castspell:883
+!petactive
+level>9
+
+//revive pet
+castspell:982
+!petalive
+petactive
+!incombat
+level>9
+
+//Mend Pet
+castspell:136;3111;3661;3662;13542;13543;13544
+petactive
+petalive
+pethealth<50
+cooldown:5000
+mana>20
+level>11
+
+//Mend Pet - out of combat
+castspell:136;3111;3661;3662;13542;13543;13544
+petactive
+petalive
+pethealth<90
+cooldown:5000
+mana>20
+!incombat
+level>11
+
+//Intimidation
+castspell:19577
+petactive
+petalive
+enemycasting
+mana>10
+distance<40
+cooldown:60000
+level>29
+incombat
+
+//====================================================================================
+// CONSUMEABLES
+
+//Eat and drink - AT SAME TIME #2
+use:drink
+nostand
+!incombat
+nogcd
+channelingtime:19000
+breakoncombat
+triggeredby:1
+
+//Eat and drink - AT SAME TIME #1
+use:food
+selfhp<60
+mana<55
+!incombat
+breakoncombat
+cooldown:1500
+nostand
+nogcd
+triggers:1
+afterloot
+
+//Drink
+use:drink
+mana<53
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Eat
+use:food
+selfhp<55
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullhp
+
+//Stand still and rest - Health
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+selfhp<50
+afterloot
+breakonfullhp
+
+//Stand still and rest - Mana
+//(only thing im unsure you can leave if you dont use mana)
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<50
+afterloot
+breakonfullmana
+
+
+//Stamina Scroll
+use:stamina scroll
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+!incombat
+
+
+//====================================================================================
+// PULLING
+
+//hunters mark
+castspell:1130;14323;14325;14324
+distance>25
+distance<36
+targetbuff!1130;14323;14325;14324
+!incombat
+level>5
+
+//aimed shot
+castspell:19434;20900;20901;20902;20903;20904
+distance>25
+!incombat
+castonce
+level>19
+
+//Concussive Shot
+castspell:5116
+targetbuff!5116
+cooldown:5000
+mana>10
+distance>10
+distance<30
+!incombat
+castonce
+level>7
+
+//arcane shot
+castspell:3044;14281;14282;14283;14284;14285;14286;14287
+distance>10
+cooldown:6000
+distance<35
+mana>10
+!incombat
+castonce
+level>5
+
+
+//====================================================================================
+// DMG SPELLS
+
+//rapid fire
+castspell:3045
+combatcount>1
+cooldown:180000
+mana>10
+level>25
+
+//multishot
+castspell:2643;14288;14289;14290;25294
+combatcount>1
+distance>5
+cooldown:10000
+mana>10
+level>17
+
+//serpent sting
+castspell:1978;13549;13550;13551;13552;13553;13554;13555;25295
+distance>10
+targetbuff!1978;13549;13550;13551;13552;13553;13554;13555;25295
+distance<35
+incombat
+mana>10
+level>3
+
+//arcane shot
+castspell:3044;14281;14282;14283;14284;14285;14286;14287
+distance>10
+cooldown:6000
+distance<35
+mana>10
+level>5
+
+//Raptor Strike
+castspell:2973;14260;14261;14262;14263;14264;14265;14266
+distance<5
+cooldown:6000
+mana>10
+
+
+//=====================================================================
+// AUTO ATTACK
+
+//Auto Shot
+castspell:75
+distance>10
+distance<25
+!autoattacking
+nogcd
+
+//Attack
+castspell:6603
+distance<5
+!autoattacking
+nogcd
