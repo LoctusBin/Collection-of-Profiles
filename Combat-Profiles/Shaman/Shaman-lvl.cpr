@@ -24,8 +24,9 @@ incombat
 // not heal if target almost dead
 castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
 selfhp<60
-targethp<20
+targethp>20
 mana>10
+incombat
 
 // Healing wave & 20+ Lesser Healing Wave
 // more than 1 enemy target check
@@ -33,21 +34,46 @@ castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
 selfhp<70
 mana>10
 combatcount>1
+incombat
 
 // Healing wave & 20+ Lesser Healing Wave
 // heal up when not in battle
 castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
 !incombat
-selfhp<80
+selfhp<70
 mana>30
+cooldown:1800
 
-//Healing Totem, smarter healing while drinking kinda
+//Healing Totem, smarter healing while drinking kinda - test
 castspell:5394;6375:6377;10462;10463;25567
 selfhp<90
-mana<50
+mana<60
+mana>20
 !incombat
 level>19
 selfbuff!5672;6371;6372;10461
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Lightning Shield
+castspell:324;325;905;945;8134;10431;10432
+!incombat
+selfbuff!324;325;905;945;8134;10431;10432
+mana>20
+level>7
+
+//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury
+castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
+!mainhandbuffed
+mana>20
+
+//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury	 					<---- OFFHAND REMOVE THE "//" UNDER
+//Remove the "//" on the 2 lines below if you dual wield.
+//castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
+//!offhandbuffed
+//mana>20
 
 
 //====================================================================================
@@ -101,25 +127,6 @@ use:agility scroll
 //Intellect Scroll
 use:intellect scroll
 !incombat
-
-//====================================================================================
-// BUFF UP!!
-
-//Lightning Shield
-castspell:324;325;905;945;8134;10431;10432
-!incombat
-selfbuff!324;325;905;945;8134;10431;10432
-mana>25
-level>7
-
-//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury
-castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
-!mainhandbuffed
-
-//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury	 					<---- OFFHAND REMOVE THE "//" UNDER
-//Remove the "//" on the 2 lines below if you dual wield.
-//castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
-//!offhandbuffed
 
 
 //====================================================================================
