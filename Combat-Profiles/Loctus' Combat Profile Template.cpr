@@ -1,0 +1,173 @@
+// Combat Profile Template
+// Template Made By: Loctus
+
+
+//====================================================================================
+// Global cooldown
+// (1000 on druid feral and rogues)
+gcd:1500
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// HEALS
+
+//Heals here if you got healing spells
+
+
+//====================================================================================
+// BUFF UP!!
+
+// Everything that got with buffing you up
+
+
+//====================================================================================
+// CONSUMEABLES
+// Take away what you dont need
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Eat and drink - AT SAME TIME #2
+use:drink
+nostand
+!incombat
+nogcd
+channelingtime:19000
+breakoncombat
+triggeredby:1
+
+//Eat and drink - AT SAME TIME #1
+use:food
+selfhp<60
+mana<55
+!incombat
+breakoncombat
+cooldown:1500
+nostand
+nogcd
+triggers:1
+afterloot
+
+//Eat
+use:food
+selfhp<55
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullhp
+
+//Drink
+use:drink
+mana<53
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+
+//Stand still and rest - Health
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+selfhp<50
+afterloot
+breakonfullhp
+
+//Stand still and rest - Mana
+//(only thing im unsure you can leave if you dont use mana)
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<50
+afterloot
+breakonfullmana
+
+
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+!incombat
+
+
+//====================================================================================
+// PULLING
+
+// The spells here that you use just before combat and in pulling the enemy
+
+
+//====================================================================================
+// DMG SPELLS
+
+// Every other dmg spell and rotation goes here.
+
+
+//=====================================================================
+// AUTO ATTACK
+// Remove wand if not using it, also remove mana if you dont have mana
+
+//Wand - if no mana
+castspell:5019
+distance<30
+mana<15
+!wandcasting
+!autoattacking
+
+//Attack - if no wand
+castspell:6603
+distance<5
+mana<15
+!wandcasting
+!autoattacking
+nogcd
