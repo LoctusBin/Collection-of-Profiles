@@ -58,25 +58,6 @@ incombat
 // CONSUMEABLES
 // Take away what you dont need
 
-//Eat - if very low on health
-use:food
-selfhp<34
-!incombat
-channelingtime:20000
-breakoncombat
-afterloot
-breakonfullhp
-
-//Bandage up - fastest way
-use:bandage
-selfhp<60
-!incombat
-channelingtime:8000
-cooldown:60000
-breakoncombat
-afterloot
-breakonfullhp
-
 //Eat and drink - AT SAME TIME #2
 use:drink
 nostand
@@ -98,17 +79,6 @@ nogcd
 triggers:1
 afterloot
 
-//Eat
-use:food
-selfhp<55
-!incombat
-channelingtime:19000
-breakoncombat
-afterloot
-nostand
-nogcd
-breakonfullhp
-
 //Drink
 use:drink
 mana<53
@@ -119,6 +89,36 @@ afterloot
 nostand
 nogcd
 breakonfullmana
+
+//Eat - if very low on health
+use:food
+selfhp<34
+!incombat
+channelingtime:20000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Bandage up - fastest way
+use:bandage
+selfhp<60
+!incombat
+channelingtime:8000
+cooldown:60000
+breakoncombat
+afterloot
+breakonfullhp
+
+//Eat
+use:food
+selfhp<55
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullhp
 
 //Stand still and rest - Health
 cast:20
