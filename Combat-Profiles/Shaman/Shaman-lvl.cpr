@@ -159,17 +159,6 @@ selfbuff!2645
 
 
 //====================================================================================
-// ATTACK !!!!!
-
-//Attack
-castspell:6603
-selfbuff!2645
-distance<5
-!autoattacking
-nogcd
-
-
-//====================================================================================
 // TOTEMS - Some are placed elsewhere
 
 //Healing Totem
@@ -210,22 +199,35 @@ level>11
 castonce
 
 //====================================================================================
-// PULLING
+// Wolf when travelling
 
-// Ghost Wolf - dont use in battle #1 - in battle
+//Ghost Wolf - dont use in battle #1 - in battle
 castspell:2645
 selfbuff=2645
 incombat
 cooldown:3000
 level>19
 
-// Ghost Wolf - dont use in battle #2 - pulling
+//Ghost Wolf - dont use in battle #2 - pulling
 castspell:2645
 selfbuff=2645
 distance<40
 !incombat
 cooldown:3000
 level>19
+
+//Ghost Wolf - use when not in battle
+castspell:2645
+selfbuff!2645
+!incombat
+!havetarget
+mana>65
+selfhp>90
+level>19
+afterloot
+
+//====================================================================================
+// PULLING
 
 //Stoneskin Totem
 castspell:8071;8154;8155;10406;10407;10408
@@ -288,16 +290,12 @@ mana>25
 level>39
 cooldown:20000
 
-
 //====================================================================================
-// Wolf when travelling - test
+// ATTACK !!!!!
 
-//Ghost Wolf - use when not in battle
-castspell:2645
+//Attack
+castspell:6603
 selfbuff!2645
-!incombat
-!havetarget
-mana>65
-selfhp>90
-level>19
-afterloot
+distance<5
+!autoattacking
+nogcd
