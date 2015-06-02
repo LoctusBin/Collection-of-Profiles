@@ -33,3 +33,4 @@ _Work mostly like a Enhancement profile._
 - Use of manapotion if low on mana
 - Use of Healthpotion if really low on health
 - Use of useful scrolls
+- Ghost wolf to travel faster
