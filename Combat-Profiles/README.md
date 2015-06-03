@@ -28,8 +28,8 @@ After that you copy your selected profile (the .cpr file) to "/combat" folder in
   
   
 ###### \* About the stages:
-| Stage    | About | 
-|----------|-------|
+| Stage    | About           | 
+|----------|-----------------|
 | Stable   | There can be some minor issues, but are working from 1-60. May miss some minor spells.  |
 | _Beta_   | A tested profile that needs some tweaking. May miss some spells. |
 | _Alpha_  | A fresh profile that needs lots of testing and tweaking. May miss lots of spells.  |
