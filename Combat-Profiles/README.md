@@ -6,12 +6,14 @@ It is intended that you can use my profiles from 1-60, so if there is something 
 
 
 ## How to add Combat profile to bot:  
-To add one of my combat profiles to your VanillaBot you need to download all my profiles.  
-:link: [Download Profiles](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+1. First download all my profiles from link below or set up SVN.  
+  :link: [Download Profiles](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+2. Find your choice of profile (the *.cpr file) in the folders, sorted after class.
+3. Copy your selected profile over to ":file_folder: combat" folder in your bot main folder
+4. Load it like a defoult combat profile :)
 
-After that you copy your selected profile (the .cpr file) to "/combat" folder in your bot folder, then load it like a normal combat profile :)
-
-:information_source: And remember to read if there is some custom macro that needs to be made to get the profile up and running.
+:exclamation: Remember to read if there is some custom macro that needs to be made to get the profile up and running.  
+Most of the profile uses bar 2 slot 0 to rest, f there is some spells here it will cast that every time
 
 
 ## Short Combat Info
