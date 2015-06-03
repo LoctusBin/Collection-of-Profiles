@@ -177,7 +177,8 @@ use:intellect scroll
 
 //=====================================================================
 // AUTO ATTACK
-// Remove wand if not using it, also remove mana if you dont have mana
+// Remove wand/Shot if not using it, also remove mana if you dont have mana.
+// If using the Auto Shot then remove "!wandcasting" in Auto Attack.
 
 //Wand - if no mana
 castspell:5019
@@ -190,10 +191,10 @@ mana<15
 castspell:75
 distance>10
 distance<25
-!autoattacking
+!wandcasting
 nogcd
 
-//Attack - if no wand
+//Auto Attack
 castspell:6603
 distance<5
 mana<15
