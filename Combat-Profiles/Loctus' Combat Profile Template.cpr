@@ -186,6 +186,13 @@ mana<15
 !wandcasting
 !autoattacking
 
+//Auto Shot
+castspell:75
+distance>10
+distance<25
+!autoattacking
+nogcd
+
 //Attack - if no wand
 castspell:6603
 distance<5
