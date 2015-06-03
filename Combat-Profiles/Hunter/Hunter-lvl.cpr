@@ -285,7 +285,7 @@ mana>10
 castspell:75
 distance>10
 distance<25
-!autoattacking
+!wandcasting
 nogcd
 
 //Attack
