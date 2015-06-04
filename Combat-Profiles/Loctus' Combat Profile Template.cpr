@@ -177,21 +177,15 @@ use:intellect scroll
 
 //=====================================================================
 // AUTO ATTACK
-// Remove wand if not using it, also remove mana if you dont have mana
+// Remove spellcaster or non spellcaster. if not hunter remove that part too.
 
+// = SPELLCASTERS =================\\
 //Wand - if no mana
 castspell:5019
 distance<30
 mana<15
 !wandcasting
 !autoattacking
-
-//Auto Shot
-castspell:75
-distance>10
-distance<25
-!autoattacking
-nogcd
 
 //Attack - if no wand
 castspell:6603
@@ -200,3 +194,19 @@ mana<15
 !wandcasting
 !autoattacking
 nogcd
+//=================================\\
+
+// NON SPELLCASTERS ===============\\
+//Auto Shot - Only hunter
+castspell:75
+distance>10
+distance<25
+!wandcasting
+nogcd
+
+//Attack - Melee
+castspell:6603
+distance<5
+!autoattacking
+nogcd
+//=================================\\
