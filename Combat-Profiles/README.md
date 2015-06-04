@@ -13,7 +13,7 @@ It is intended that you can use my profiles from 1-60, so if there is something 
 4. Load it like a defoult combat profile :)
 
 :exclamation: Remember to read if there is some custom macro that needs to be made to get the profile up and running.  
-Most of the profile uses bar 2 slot 0 to rest, f there is some spells here it will cast that every time
+Most of the profile uses bar 2 slot 0 to rest, if there is spells here it will cast that every time
 
 
 ## Short Combat Info
