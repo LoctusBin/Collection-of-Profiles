@@ -83,7 +83,7 @@ channelingtime:11000
 level>9
 
 // Heal pet - not in combat
-castspell:755;3698;3699;3700;11693;11694;11695;27259;47856
+castspell:755;3698;3699;3700;11693;11694;11695
 !incombat
 petactive
 pethealth<60
@@ -92,7 +92,7 @@ breakoncombat
 level>11
 
 // Heal pet - in combat
-castspell:755;3698;3699;3700;11693;11694;11695;27259;47856
+castspell:755;3698;3699;3700;11693;11694;11695
 petactive
 pethealth<10
 channelingtime:10000
@@ -332,11 +332,11 @@ cooldown:120000
 level>41
 
 // Fear
-castspell:5782;6213;6215;53754;53759
+castspell:5782;6213;6215
 mana>10
 selfhp<50
 targethp>20
-targetbuff!5782;6213;6215;53754;53759
+targetbuff!5782;6213;6215
 cooldown:2500
 level>7
 
