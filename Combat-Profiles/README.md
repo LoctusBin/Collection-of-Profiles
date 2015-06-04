@@ -8,7 +8,7 @@ It is intended that you can use my profiles from 1-60, so if there is something 
 ## How to add Combat profile to bot:  
 1. First download all my profiles from link below or set up SVN.  
   :link: [Download Profiles](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
-2. Find your choice of profile (the *.cpr file) in the folders, sorted after class.
+2. Find your choice of profile (the *.cpr file) in the folder ":file_folder: Combat-Profiles", sorted after class then the profiles themselves.
 3. Copy your selected profile over to ":file_folder: combat" folder in your bot main folder
 4. Load it like a default combat profile :)
 
