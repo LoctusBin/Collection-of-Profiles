@@ -15,7 +15,7 @@ Just started to do this as i wants to have an easy way to move from the starting
 
 ## Short Info
 
-| Class                         | Stage * | GhostWP            | Short info                  |
+| Route                         | Stage * | GhostWP            | Short info                  |
 |-------------------------------|:-------:|:------------------:|-----------------------------|
 | Valley of Trails - Orgrimmar  | _Beta_  | :x:                | Works. Not sure if 100% death free.  |
 
