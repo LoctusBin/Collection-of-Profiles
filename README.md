@@ -1,5 +1,5 @@
 # Collection of VanillaBotter Profiles!
-_Profiles for the paid version of [VanillaBotter](http://vanillabotter.com/)_
+_Profiles for the paid version of [VanillaBotter](http://vanillabotter.com/) by [Loctus](http://www.vanillabotter.com/forum/memberlist.php?mode=viewprofile&u=3139)_
 
 This is the main Hub for all of my Profiles, will keep the profiles up to date here if any changes are made.  
 There will be a readme in each of the Folders and profiles to describe how to use the profile and how it works.  
