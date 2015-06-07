@@ -23,7 +23,7 @@ Most of the profiles uses bar 2 slot 0 to rest, if there are spells here it will
 | Druid   | N/A             | N/A     | N/A                           | Not yet made     |
 | Hunter  | N/A             | _Alpha_ | :negative_squared_cross_mark: |  |
 | Mage    | Fire & Frost    | Stable  | :ballot_box_with_check:       |  |
-| Paladin | N/A             | N/A     | N/A                           | Not yet made     |
+| Paladin | Retribution     | _Alpha_ | :negative_squared_cross_mark: |  |
 | Priest  | Shadow          | _Alpha_ | :negative_squared_cross_mark: |  |
 | Rogue   | Combat          | _Beta_  | :negative_squared_cross_mark: |  |
 | Shaman  | N/A             | Stable  | :negative_squared_cross_mark: | Works mostly like a Enhancement profile. |
