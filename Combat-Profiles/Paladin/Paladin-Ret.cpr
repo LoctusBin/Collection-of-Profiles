@@ -1,0 +1,188 @@
+// Profile name?
+
+// CLASS   : Paladin
+// SPEC    : Retribution
+// TALENTS : No specific
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+
+// CREDITS:
+// Made By: Loctus
+// Default palla ret profile
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+
+gcd:1500
+
+
+//====================================================================================
+// HEALS
+
+//Lay on Hands
+castspell:633;2800;10310
+selfhp<10
+targethp>5
+incombat
+cooldown:2400000
+level>9
+
+//Holy Light - Hammer of Justice
+castspell:635;639;647;1026;1042;3472;10328;10329;25292
+mana>15
+cooldown:3500;1
+triggeredby:2
+incombat
+
+//Flash of Light - Hammer of Justice
+castspell:19750;19939;19940;19941;19942;19943
+mana>10
+level>19
+triggeredby:2
+incombat
+
+//Holy Light - heal up after combat
+castspell:635;639;647;1026;1042;3472;10328;10329;25292
+selfhp<65
+!incombat
+mana>50
+cooldown:3500;1
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Blessing of Might
+castspell:19740;19834;19835;19836;19837;19838;25291
+selfbuff!19740;19834;19835;19836;19837;19838;25291
+mana>60
+level>3
+
+//Devotion & 16+ Retribution Aura
+castspell:465;10290;7294;10298;10299;10300;10301
+selfbuff!465;10290;7294;10298;10299;10300;10301
+!incombat
+
+//Divine Shield
+castspell:642;1020
+selfhp<20
+cooldown:300000
+incombat
+targethp>20
+level>33
+
+
+//====================================================================================
+// CONSUMEABLES
+
+//Drink
+use:drink
+mana<53
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+
+//Stand still and rest - Mana
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<50
+afterloot
+breakonfullmana
+
+//Stand still and rest - Health
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+selfhp<50
+afterloot
+breakonfullhp
+
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+!incombat
+
+
+//====================================================================================
+// PULLING
+
+//Seal of Righteousness & 20+ Seal of Command
+castspell:20154;21084;20287;20288;20375;20915;20918;20919;20920
+selfbuff!20154;21084;20287;20288;20375;20915;20918;20919;20920
+distance<10
+
+
+//====================================================================================
+// DMG SPELLS
+
+//Hammer of Wrath
+castspell:24275;24274;24239
+targethp<20
+distance<30
+cooldown:6000
+level>43
+
+//Hammer of Justice
+castspell:853;5588;5589;10308
+distance<9
+cooldown:60000
+selfhp<50
+triggers:2
+level>7
+
+//Judgement
+castspell:20271
+selfbuff=20154;21084;20287;20288;20375;20915;20918;20919;20920
+distance<10
+cooldown:8000
+mana>50
+level>3
+nogcd
+
+
+//=====================================================================
+// AUTO ATTACK
+
+//Attack - Melee
+castspell:6603
+distance<5
+!autoattacking
+nogcd
