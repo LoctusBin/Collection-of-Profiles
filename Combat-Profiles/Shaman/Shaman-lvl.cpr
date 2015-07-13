@@ -38,12 +38,14 @@ incombat
 // healing totem is down in totems
 
 // Healing wave & 20+ Lesser Healing Wave
-// not heal if target almost dead
+// not heal if target almost dead - 1 enemy
 castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
 selfbuff!2645
-selfhp<60
+selfhp<54
 targethp>20
 mana>10
+combatcount<2
+cooldown:1700
 incombat
 
 // Healing wave & 20+ Lesser Healing Wave
@@ -53,6 +55,7 @@ selfbuff!2645
 selfhp<70
 mana>10
 combatcount>1
+cooldown:1700
 incombat
 
 // Healing wave & 20+ Lesser Healing Wave
