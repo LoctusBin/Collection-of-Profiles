@@ -1,0 +1,299 @@
+// Shaman levelling profile, mostly set up for Enhancement/ Low mana use
+
+// CUSTOM EDITION:
+// - Removed Flame and Frost Shock
+// - Added in all Earth Shock spells
+
+// CLASS   : Shaman
+// SPEC    : Enhancement (you does not need to be in this spec tho.)
+// TALENTS : Nothing specific
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Need to remove some "//" if you are using dual wield. look down in the profile. line 100.
+
+// CREDITS:
+// Made By: Loctus
+// Bin4ry - haveitem totem check
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+
+gcd:1500
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// HEALS
+// healing totem is down in totems
+
+// Healing wave & 20+ Lesser Healing Wave
+// not heal if target almost dead - 1 enemy
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+selfbuff!2645
+selfhp<54
+targethp>20
+mana>10
+combatcount<2
+cooldown:1700
+incombat
+
+// Healing wave & 20+ Lesser Healing Wave
+// more than 1 enemy target check
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+selfbuff!2645
+selfhp<70
+mana>10
+combatcount>1
+cooldown:1700
+incombat
+
+// Healing wave & 20+ Lesser Healing Wave
+// heal up when not in battle
+castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
+selfbuff!2645
+!incombat
+selfhp<70
+mana>30
+cooldown:1800
+
+//Healing Totem, smarter healing while drinking kinda - test
+castspell:5394;6375:6377;10462;10463;25567
+selfbuff!2645;5672;6371;6372;10461
+haveitem:5177>0
+selfhp<80
+mana<60
+mana>20
+!incombat
+level>19
+
+
+//====================================================================================
+// BUFF UP!!
+
+//Lightning Shield
+castspell:324;325;905;945;8134;10431;10432
+!incombat
+selfbuff!324;325;905;945;8134;10431;10432;2645
+mana>20
+level>7
+
+//MAIN:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury
+castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
+!mainhandbuffed
+selfbuff!2645
+mana>20
+
+//OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury	 					<---- OFFHAND REMOVE THE "//" UNDER
+//Remove the "//" on the 2 lines below if you dual wield.
+//castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
+//!offhandbuffed
+//selfbuff!2645
+//mana>20
+
+
+//====================================================================================
+// CONSUMEABLES
+
+// Drink up!
+use:drink
+channelingtime:27000
+selfbuff!2645
+breakoncombat
+!incombat
+mana<62
+afterloot
+breakonfullmana
+
+//if not stay put and summon a mana totem and stay put? only if not casted.
+castspell:5675;10495;16190;17354;17359
+channelingtime:27000
+breakoncombat
+!incombat
+level>25
+selfbuff!5677;10491;10493;10494;2645
+mana<59
+afterloot
+breakonfullmana
+
+// If not stand still and rest
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<40
+afterloot
+breakonfullmana
+
+//Spirit Scroll
+use:spirit scroll
+selfbuff!2645
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+selfbuff!2645
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+selfbuff!2645
+!incombat
+
+//Agility Scroll
+use:agility scroll
+selfbuff!2645
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+selfbuff!2645
+!incombat
+
+
+//====================================================================================
+// TOTEMS - Some are placed elsewhere
+
+//Healing Totem
+castspell:5394;6375:6377;10462;10463;25567
+selfbuff!5672;6371;6372;10461;2645
+haveitem:5177>0
+selfhp<80
+mana>10
+level>19
+incombat
+
+//manaspring in combat
+castspell:5675;10495;10496;10497
+selfbuff!5677;10491;10493;10494;5672;6371;6372;10461;2645
+haveitem:5177>0
+mana<60
+incombat
+level>25
+
+//Searing Totem
+castspell:3599;6363;6364;6365;10437;10438
+selfbuff!2645
+haveitem:5176>0
+mana>10
+incombat
+distance<20
+level>9
+castonce
+
+//Fire Nova Totem
+castspell:1535;8498;8499;11314;11315
+selfbuff!2645
+haveitem:5176>0
+mana>10
+incombat
+combatcount>2
+level>11
+castonce
+
+//====================================================================================
+// Wolf when travelling
+
+//Ghost Wolf - dont use in battle #1 - in battle
+castspell:2645
+selfbuff=2645
+incombat
+cooldown:3000
+level>19
+
+//Ghost Wolf - dont use in battle #2 - pulling
+castspell:2645
+selfbuff=2645
+distance<40
+!incombat
+cooldown:3000
+level>19
+
+//Ghost Wolf - use when not in battle
+castspell:2645
+selfbuff!2645
+!incombat
+!havetarget
+mana>65
+selfhp>90
+level>19
+afterloot
+
+//====================================================================================
+// PULLING
+
+//Stoneskin Totem
+castspell:8071;8154;8155;10406;10407;10408
+haveitem:5175>0
+distance<30
+mana>10
+level>3
+selfbuff!8072;8156;5187;10403;10404;10405
+
+//Lightning Bolt
+castspell:403;529;548;915;943;6041;10391;10392;15207;15208
+distance<30
+distance>10
+!haveaggro
+!incombat
+mana>10
+castonce
+
+
+//====================================================================================
+// DMG SPELLS
+
+//Lightning Bolt on Clearcasting
+castspell:403;529;548;915;943;6041;10391;10392;15207;15208
+selfbuff=16246
+distance<30
+distance>10
+!haveaggro
+
+//Chain Lightning when multiple mobs
+castspell:421;930;2860;10605
+distance<30
+!haveaggro
+combatcount>2
+cooldown:6000
+level>31
+mana>10
+
+//Stormstrike
+castspell:17364
+distance<5
+mana>25
+level>39
+cooldown:20000
+
+//Earth Shock
+castspell:8042;8044;8045;8046;10412;10413;10414
+distance<20
+mana>10
+level>3
+cooldown:6000;1
+
+
+//====================================================================================
+// ATTACK !!!!!
+
+//Attack
+castspell:6603
+selfbuff!2645
+distance<5
+!autoattacking
+nogcd
