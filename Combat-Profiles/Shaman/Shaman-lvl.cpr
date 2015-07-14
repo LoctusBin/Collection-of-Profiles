@@ -271,20 +271,12 @@ mana>10
 
 //Flame Shock
 castspell:8050;8052;8053;10447;10448;29228
+targetbuff!8050;8052;8053;10447;10448;29228
 distance<20 
 mana>10 
 level>9
-targetbuff!8050;8052;8053;10447;10448;29228
 cooldown:6000;1
-chance:51
-
-//Earth Shock & 20+ Frost shock
-castspell:8042;8044;8045;8056;8058;10472;10473
-distance<20
-mana>10
-level>3
-cooldown:6000;1
-chance:84
+chance:29
 
 //Stormstrike
 castspell:17364
@@ -292,6 +284,14 @@ distance<5
 mana>25
 level>39
 cooldown:20000
+
+//Earth Shock & 20+ Frost shock
+castspell:8042;8044;8045;8056;8058;10472;10473
+distance<20
+mana>10
+level>3
+cooldown:6000;1
+
 
 //====================================================================================
 // ATTACK !!!!!
