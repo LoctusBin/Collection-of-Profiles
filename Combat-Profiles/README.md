@@ -28,7 +28,7 @@ Most of the profiles uses bar 2 slot 0 to rest, if there are spells here it will
 | Rogue   | Combat          | _Beta_  | :negative_squared_cross_mark: |  |
 | Shaman  | N/A             | Stable  | :negative_squared_cross_mark: | Works mostly like a Enhancement profile. |
 | Warlock | Affliction      | Stable  | :ballot_box_with_check:       | Modified Nik's profile |
-| Warrior | Prot & Default? | _Beta_  | :ballot_box_with_check:       | Stancedance & off-tanking |
+| Warrior | Prot & Default? | Stable  | :ballot_box_with_check:       | Stancedance & off-tanking |
   
   
 ###### \* About the stages:
