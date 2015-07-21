@@ -41,14 +41,19 @@ selfbuff!139;6074;6075;6076;6077;6078;10927;10928;10929;25315
 selfhp<80
 mana>10
 
-//Heal (long!)
-castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
-selfhp<40
+//Flash Heal
+castspell:2061;9472;9473;9474;10915;10916;10917
+selfhp<28
 mana>15
 
 //Heal (long!)
 castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
-selfhp<70
+selfhp<50
+mana>15
+
+//Heal (long!)
+castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
+selfhp<80
 mana>15
 !incombat
 
@@ -134,9 +139,11 @@ castspell:15286
 targetbuff!15286
 targethp>75
 distance<30
+mana>40
 cooldown:10000
+castonce
 
-//Holy Fire
+//Holy Fire - From lvl 20
 castspell:14914;15262;15263;15264;15265;15266;15267;15261
 !incombat
 distance<30
@@ -144,7 +151,7 @@ mana>40
 castonce
 level>19
 
-//Smite - pulling
+//Smite - Pre lvl 20, will cast if mob is far away
 castspell:585;591;598;984;1004;6060;10933;10934
 mana>10
 distance<30
@@ -194,11 +201,17 @@ mana<30
 distance<30
 level>23
 
-//Smite
+//Mind Flay - If nothing else to cast / Mana friendly
+castspell:15407;17311;17312;17313;17314;18807
+distance<20
+mana>10
+channelingtime:3000
+level>19
+
+//Smite - uses mostly before lvl 20
 castspell:585;591;598;984;1004;6060;10933;10934
 mana>10
 distance<30
-level<20
 
 
 //=====================================================================
