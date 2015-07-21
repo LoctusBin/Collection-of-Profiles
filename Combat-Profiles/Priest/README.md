@@ -1,4 +1,4 @@
-# 1-60 Priest - Shadow _Alpha_
+# 1-60 Priest - Shadow _Beta_
 
 _More info will come._
 
