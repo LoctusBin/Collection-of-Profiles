@@ -4,6 +4,7 @@ I will update and fix any issues there is, and if someone needs help with making
 
 It is intended that you can use my profiles from 1-60, so if there is something that are better than other spells in some levels, then just post an issue about it and i will fix it as soon as possible.
 
+###### Racial Spells
 All my profiles now use Racial Spells, by doing that it will come up that you miss some spells when loading in the profile.  
 You can double check the spell-ids in the profile, and take away the one your not using if you dont want that error, or leave them be.  
 Some error about the missing spell-ids are talents btw, or that you forget to learn or equip new spells.
