@@ -1,8 +1,6 @@
 # 1-60 Combat Profiles  
-As for now there are a few combat profiles up, more will come with the time.  
-I will update and fix any issues there is, and if someone needs help with making a profile, just tell me.
 
-It is intended that you can use my profiles from 1-60, so if there is something that are better than other spells in some levels, then just post an issue about it and i will fix it as soon as possible.
+All my profiles are intended to use 1-60. tell me if your find some issues.
 
 ###### Racial Spells
 All my profiles now use Racial Spells, by doing that it will come up that you miss some spells when loading in the profile.  
