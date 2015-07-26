@@ -19,6 +19,36 @@ gcd:1500
 
 
 //====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+
+//====================================================================================
+// RACIAL TRAITS - Only battle specific spells
+// Most of the "cant find spellid" error will be because of this
+
+// Alliance
+
+//Stoneform - Dwarf
+castspell:20594
+distance<30
+targethp>50
+selfhp<40
+cooldown:180000
+incombat
+nogcd
+
+
+//====================================================================================
 // HEALS
 
 //Lay on Hands
@@ -49,20 +79,6 @@ selfhp<65
 !incombat
 mana>50
 cooldown:3500;1
-
-
-//====================================================================================
-// POTIONS
-
-//Health Pot - just in case
-use:health potion
-selfhp<15
-incombat
-
-//Mana Pot - just in case
-use:mana potion
-mana<15
-incombat
 
 
 //====================================================================================

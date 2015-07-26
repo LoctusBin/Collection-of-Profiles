@@ -34,6 +34,37 @@ incombat
 
 
 //====================================================================================
+// RACIAL TRAITS - Only battle specific spells
+// Most of the "cant find spellid" error will be because of this
+
+// Horde
+
+//Berserking - Troll
+castspell:26297
+distance<30
+targethp>50
+cooldown:180000
+incombat
+nogcd
+
+//Blood Fury - Orc
+castspell:20572
+distance<30
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+//War Stomp - Tauren
+castspell:20549
+distance<8
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+
+//====================================================================================
 // HEALS
 // healing totem is down in totems
 

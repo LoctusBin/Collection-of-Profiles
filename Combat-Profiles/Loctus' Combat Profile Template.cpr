@@ -32,6 +32,57 @@ use:mana potion
 mana<15
 incombat
 
+//====================================================================================
+// RACIAL TRAITS - Only battle specific spells
+// Most of the "cant find spellid" error will be because of this
+
+// Horde
+
+//Berserking - Troll
+castspell:26297
+distance<30
+targethp>50
+cooldown:180000
+incombat
+nogcd
+
+//Blood Fury - Orc
+castspell:20572
+distance<30
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+//War Stomp - Tauren
+castspell:20549
+distance<8
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+//Cannibalize - Undead
+castspell:20577
+distance<5
+selfhp<40
+cooldown:120000
+channelingtime:10000
+!incombat
+breakoncombat
+breakonhpfull
+nogcd
+
+// Alliance
+
+//Stoneform - Dwarf
+castspell:20594
+distance<30
+targethp>50
+selfhp<40
+cooldown:180000
+incombat
+nogcd
 
 //====================================================================================
 // HEALS
@@ -196,8 +247,8 @@ mana<15
 nogcd
 //=================================\\
 
-// NON SPELLCASTERS ===============\\
-//Auto Shot - Only hunter
+// = NON SPELLCASTERS ==============\\
+//Auto Shot - Only Hunter
 castspell:75
 distance>10
 distance<25

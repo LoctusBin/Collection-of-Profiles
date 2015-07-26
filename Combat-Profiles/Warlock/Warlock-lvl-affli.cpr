@@ -35,6 +35,32 @@ mana<15
 incombat
 
 
+//====================================================================================
+// RACIAL TRAITS - Only battle specific spells
+// Most of the "cant find spellid" error will be because of this
+
+// Horde
+
+//Blood Fury - Orc
+castspell:20572
+distance<30
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+//Cannibalize - Undead
+castspell:20577
+distance<5
+selfhp<40
+cooldown:120000
+channelingtime:10000
+!incombat
+breakoncombat
+breakonhpfull
+nogcd
+
+
 //=====================================================================
 // BUFF UP!!!
 
