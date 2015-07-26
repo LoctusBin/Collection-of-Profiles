@@ -1,0 +1,157 @@
+// Druid profile, started fresh from template. noting in it yet
+
+// CLASS   : Druid
+// SPEC    : NA
+// TALENTS : Talent info/link
+
+// PROFILE INFO:
+// Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Write here about macros etc.
+
+// CREDITS:
+// Made By: Loctus
+
+
+//====================================================================================
+// GLOBAL COOLDOWN
+// (1000 on druid feral and rogues)
+
+gcd:1500
+
+
+//====================================================================================
+// POTIONS
+
+//Health Pot - just in case
+use:health potion
+selfhp<15
+incombat
+
+//Mana Pot - just in case
+use:mana potion
+mana<15
+incombat
+
+//====================================================================================
+// RACIAL TRAITS - Only battle specific spells
+// Most of the "cant find spellid" error will be because of this
+
+// Horde
+
+//War Stomp - Tauren
+castspell:20549
+distance<8
+targethp>50
+cooldown:120000
+incombat
+nogcd
+
+
+//====================================================================================
+// HEALS
+
+//Heals here if you got healing spells
+
+
+
+//====================================================================================
+// BUFF UP!!
+
+// Everything that got with buffing you up
+
+//====================================================================================
+// CONSUMEABLES
+// Take away what you dont need
+
+//Drink
+use:drink
+mana<53
+!incombat
+channelingtime:19000
+breakoncombat
+afterloot
+nostand
+nogcd
+breakonfullmana
+
+//Stand still and rest - Mana
+//(only thing im unsure you can leave if you dont use mana)
+cast:20
+channelingtime:20000
+breakoncombat
+!incombat
+mana<50
+afterloot
+breakonfullmana
+
+
+//Spirit Scroll
+use:spirit scroll
+!incombat
+
+//Stamina Scroll
+use:stamina scroll
+!incombat
+
+//Strength Scroll
+use:strength Scroll
+!incombat
+
+//Agility Scroll
+use:agility scroll
+!incombat
+
+//Intellect Scroll
+use:intellect scroll
+!incombat
+
+
+//====================================================================================
+// PULLING
+
+// The spells here that you use just before combat and in pulling the enemy
+
+
+
+//====================================================================================
+// DMG SPELLS
+
+// Every other dmg spell and rotation goes here.
+
+
+
+//=====================================================================
+// AUTO ATTACK
+// Remove spellcaster or non spellcaster. if not hunter remove that part too.
+
+// = SPELLCASTERS =================\\
+//Wand - if no mana
+castspell:5019
+distance<30
+mana<15
+!wandcasting
+!autoattacking
+
+//Attack - if no wand
+castspell:6603
+distance<5
+mana<15
+!wandcasting
+!autoattacking
+nogcd
+//=================================\\
+
+// = NON SPELLCASTERS ==============\\
+//Auto Shot - Only Hunter
+castspell:75
+distance>10
+distance<25
+!wandcasting
+nogcd
+
+//Attack - Melee
+castspell:6603
+distance<5
+!autoattacking
+nogcd
+//=================================\\
