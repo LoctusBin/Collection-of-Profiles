@@ -195,11 +195,12 @@ selfbuff=17;592;600;3747;6065;6066;10898;10899;10900;10901
 channelingtime:3000
 level>19
 
-//Mana Burn - Test phase
+//Mana Burn
 castspell:8129;8131;10874;10875;10876
-mana<30
+mana<52
 distance<30
 level>23
+castonce
 
 //Mind Flay - If nothing else to cast / Mana friendly
 castspell:15407;17311;17312;17313;17314;18807
@@ -221,6 +222,7 @@ distance<30
 castspell:5019
 distance<30
 mana<15
+cooldown:3000
 !wandcasting
 !autoattacking
 
