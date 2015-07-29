@@ -54,7 +54,7 @@ cooldown:120000
 channelingtime:10000
 !incombat
 breakoncombat
-breakonhpfull
+breakonfullhp
 nogcd
 
 // Alliance
@@ -201,7 +201,7 @@ castonce
 //====================================================================================
 // DMG SPELLS
 
-//Devouring Plague
+//Devouring Plague - undead
 castspell:2944;19276;19277;19278;19279;19280
 cooldown:180000
 selfhp<80

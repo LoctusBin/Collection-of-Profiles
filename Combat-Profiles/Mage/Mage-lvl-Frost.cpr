@@ -53,11 +53,12 @@ nogcd
 castspell:20577
 distance<5
 selfhp<40
+mana>70
 cooldown:120000
 channelingtime:10000
 !incombat
 breakoncombat
-breakonhpfull
+breakonfullhp
 nogcd
 
 // Alliance
@@ -79,6 +80,7 @@ nogcd
 castspell:11426;13031;13032;13033
 selfhp<85
 incombat
+mana>10
 selfbuff!11426;13031;13032;13033
 cooldown:30000;1
 level>39
@@ -86,6 +88,7 @@ level>39
 //Ice Barrier - Out of combat, before pulling
 castspell:11426;13031;13032;13033
 !incombat
+mana>20
 selfbuff!11426;13031;13032;13033
 cooldown:30000;1
 distance<35

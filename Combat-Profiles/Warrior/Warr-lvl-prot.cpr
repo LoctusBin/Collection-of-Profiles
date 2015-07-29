@@ -70,7 +70,7 @@ cooldown:120000
 channelingtime:10000
 !incombat
 breakoncombat
-breakonhpfull
+breakonfullhp
 nogcd
 
 // Alliance
