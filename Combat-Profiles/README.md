@@ -17,6 +17,16 @@ Some error about the missing spell-ids are talents btw, or that you forget to le
 :exclamation: Remember to read if there is some custom macros that needs to be made to make the profile working.  
 Most of the profiles uses bar 2 slot 0 to rest, if there are spells here it will cast it every time.
 
+## Notepad++ .cpr Language Template:  
+The template is mostly for making it easier to look at the code and find out that your are using the right word etc.
+
+###### How to add to Notepad++:
+1. First download all my profiles from link below or set up SVN.  
+  :link: [Download Profiles](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+2. Then open Notepad++ and In the menu "Language" choose "Define your language..."
+3. In the new window click the "Import..." button. 
+4. Find "Notepad++ cpr Language-Template.xml" in the folder ":file_folder: Combat-Profiles" from the file you downloaded
+5. Then Open the file. from this moment on you can easy read down and know where the comments etc are.
 
 ## Short Combat Info
 
