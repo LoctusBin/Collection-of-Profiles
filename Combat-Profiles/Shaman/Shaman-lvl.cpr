@@ -99,7 +99,7 @@ mana>30
 cooldown:1800
 
 //Healing Totem, smarter healing while drinking kinda - test
-castspell:5394;6375:6377;10462;10463;25567
+castspell:5394;6375;6377;10462;10463;25567
 selfbuff!2645;5672;6371;6372;10461
 haveitem:5177>0
 selfhp<80
