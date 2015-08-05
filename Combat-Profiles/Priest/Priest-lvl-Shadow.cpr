@@ -57,6 +57,16 @@ breakoncombat
 breakonfullhp
 nogcd
 
+//Devouring Plague - undead
+castspell:2944;19276;19277;19278;19279;19280
+cooldown:180000
+selfhp<80
+targethp>40
+distance<30
+mana>40
+level>19
+nogcd
+
 // Alliance
 
 //Stoneform - Dwarf
@@ -68,6 +78,14 @@ cooldown:180000
 incombat
 nogcd
 
+//Desperate Prayer - Dwarf & Human
+castspell:13908;19236;19238;19240;19241;19242;19243
+distance<30
+targethp>13
+selfhp<25
+cooldown:600000
+incombat
+nogcd
 
 //====================================================================================
 // HEALS
@@ -200,15 +218,6 @@ castonce
 
 //====================================================================================
 // DMG SPELLS
-
-//Devouring Plague - undead
-castspell:2944;19276;19277;19278;19279;19280
-cooldown:180000
-selfhp<80
-targethp>40
-distance<30
-mana>40
-level>19
 
 //Mind Blast
 castspell:8092;8102;8103;8104;8105;8106;10945;10946;10947
