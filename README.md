@@ -6,6 +6,8 @@ There is be a readme in each of the Folders and profiles to describe how to use 
 
 :open_file_folder: [Combat profiles](Combat-Profiles)  
 :open_file_folder: [Goto profiles](Goto-Profiles)  
+
+Please read up on the [FAQ](https://github.com/LoctusBin/Collection-of-Profiles/wiki/FAQ) before asking questions.
   
   
 #### Got feedback?  
