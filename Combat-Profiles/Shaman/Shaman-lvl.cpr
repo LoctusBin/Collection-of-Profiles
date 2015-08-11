@@ -242,7 +242,7 @@ incombat
 cooldown:3000
 level>19
 
-//Ghost Wolf - dont use in battle #2 - pulling
+//Ghost Wolf - dont use in battle #1 - before battle
 castspell:2645
 selfbuff=2645
 distance<40
