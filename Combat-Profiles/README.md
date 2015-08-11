@@ -30,7 +30,7 @@ The template is mostly for making it easier to look at the code and find out tha
 
 | Class   | Specialization  | Stage * | Macro                         | Short info       |
 |---------|-----------------|:-------:|:-----------------------------:|------------------|
-| Druid   | N/A             | N/A     | N/A                           | Not yet made     |
+| Druid   | Feral           | _Beta_  | :negative_squared_cross_mark: | Still needs some testing on bear from. |
 | Hunter  | N/A             | _Alpha_ | :negative_squared_cross_mark: |  |
 | Mage    | Fire & Frost    | Stable  | :ballot_box_with_check:       |  |
 | Paladin | Retribution     | _Alpha_ | :negative_squared_cross_mark: |  |
