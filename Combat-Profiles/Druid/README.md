@@ -1,5 +1,5 @@
-# 1-60 Druid _Alpha_
+# 1-60 Druid _Beta_
 
 _More info will come._
 
-### NB! Still no spells in the profile!
+With Travel form and good mana handling, with this also max dps the safest way from 1-60
