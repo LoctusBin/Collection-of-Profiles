@@ -1,22 +1,21 @@
-// Druid profile, started fresh from template. noting in it yet
+// Druid profile, Shapeshift Feral with Travel form and good mana control with max dps and speed.
 
 // CLASS   : Druid
-// SPEC    : NA
+// SPEC    : Feral
 // TALENTS : Talent info/link
 
 // PROFILE INFO:
 // Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
-// Write here about macros etc.
 
 // CREDITS:
 // Made By: Loctus
+// Lot of ideas/Rotation from Bin4ry
 
 
 //====================================================================================
 // GLOBAL COOLDOWN
-// (1000 on druid feral and rogues)
 
-gcd:1500
+gcd:1000
 
 
 //====================================================================================
@@ -32,14 +31,16 @@ use:mana potion
 mana<15
 incombat
 
+
 //====================================================================================
 // RACIAL TRAITS - Only battle specific spells
 // Most of the "cant find spellid" error will be because of this
 
 // Horde
 
-//War Stomp - Tauren
+//War Stomp - Tauren - Druid Special
 castspell:20549
+selfbuff!5487;768;9634;783
 distance<8
 targethp>50
 cooldown:120000
@@ -50,21 +51,65 @@ nogcd
 //====================================================================================
 // HEALS
 
-//Heals here if you got healing spells
+//Rejuvenation - In combat
+castspell:774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299
+selfbuff!774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299;5487;768;9634;783
+cooldown:1500;1
+selfhp<90
+targethp>15
+mana>60
+level>3
+incombat
 
+//Rejuvenation - Out of combat
+castspell:774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299
+selfbuff!774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299;5487;768;9634;783
+cooldown:1500;1
+selfhp<93
+mana>70
+level>3
+!incombat
+
+//Healing Touch
+castspell:5185;5186;5187;5188;5189;6778;8903;9758;9888;9889;25297
+selfbuff!5487;768;9634;783
+selfhp<40
+mana>20
+cooldown:1500;1
+incombat
 
 
 //====================================================================================
 // BUFF UP!!
 
-// Everything that got with buffing you up
+//Mark of the Wild
+castspell:1126;5232;6756;5234;8907;9884;9885
+selfbuff!1126;5232;6756;5234;8907;9884;9885;5487;768;9634;783
+cooldown:1500;1
+!incombat
+
+//Thorns
+castspell:467;782;1075;8914;9756;9910
+selfbuff!467;782;1075;8914;9756;9910;5487;768;9634;783
+cooldown:1500;1
+!incombat
+
+//Innervate
+castspell:29166
+selfbuff!5487;768;9634;783
+mana<40
+mana>5
+cooldown:360000
+level>39
+!incombat
+
 
 //====================================================================================
 // CONSUMEABLES
-// Take away what you dont need
 
 //Drink
 use:drink
+selfbuff!5487;768;9634;783
 mana<53
 !incombat
 channelingtime:19000
@@ -75,19 +120,14 @@ nogcd
 breakonfullmana
 
 //Stand still and rest - Mana
-//(only thing im unsure you can leave if you dont use mana)
 cast:20
-channelingtime:20000
+selfbuff!5487;768;9634;783
+channelingtime:8000
 breakoncombat
 !incombat
-mana<50
+mana<60
 afterloot
 breakonfullmana
-
-
-//Spirit Scroll
-use:spirit scroll
-!incombat
 
 //Stamina Scroll
 use:stamina scroll
@@ -101,57 +141,228 @@ use:strength Scroll
 use:agility scroll
 !incombat
 
-//Intellect Scroll
-use:intellect scroll
+
+//====================================================================================
+// Forms - Some in pulling
+
+//Travel > Normal Form - in combat
+castspell:783
+selfbuff=783
+incombat
+cooldown:2000;2
+level>29
+
+//Travel > Normal Form - Before combat
+castspell:783
+selfbuff=783
+distance<35
 !incombat
+cooldown:2000;2
+level>29
+
+//Travel Form
+castspell:783
+selfbuff!783;768
+!havetarget
+!incombat
+selfhp>70
+mana>45
+cooldown:2000;2
+level>29
+
+//Bear Form > Normal Form - Rebuff b4 pull
+castspell:5487;9634
+selfbuff=5487;9634
+selfbuff!467;782;1075;8914;9756;9910;1126;5232;6756;5234;8907;9884;9885;774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299
+!incombat
+mana>65
+distance<30
+cooldown:2000;2
+level>9
+level<20
+
+//Cat Form > Normal Form - Rebuff b4 pull
+castspell:768
+selfbuff=768
+selfbuff!467;782;1075;8914;9756;9910;1126;5232;6756;5234;8907;9884;9885;774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299
+!incombat
+mana>65
+distance<30
+cooldown:2000;2
+level>19
+
+//Cat Form > Normal Form - Goto Travel form
+castspell:768
+selfbuff=768
+!incombat
+!havetarget
+mana>80
+cooldown:2000;2
+level>29
+
+//Bear Form > Normal Form - Low Health
+castspell:5487;9634
+selfbuff=5487;9634
+selfhp<30
+mana>30
+cooldown:2000;2
+level>9
+level<20
+
+//Cat Form > Normal Form - Low Health
+castspell:768
+selfbuff=768
+selfhp<30
+mana>30
+cooldown:2000;2
+level>19
 
 
 //====================================================================================
 // PULLING
 
-// The spells here that you use just before combat and in pulling the enemy
+//Rejuvenation - Before changing form
+castspell:774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299
+selfbuff!774;1058;1430;2090;2091;3627;8910;9839;9840;9841;25299;5487;768;9634;783
+cooldown:1500;1
+distance<30
+mana>70
+level>9
+!incombat
 
+//Bear Form
+castspell:5487;9634
+selfbuff!5487;9634
+distance<30
+mana>60
+cooldown:2000;2
+level>9
+level<20
+
+//Cat Form
+castspell:768
+selfbuff!768;783
+distance<30
+mana>60
+cooldown:2000;2
+level>19
+
+//Wrath - Before cat/bear form
+castspell:5176;5177;5178;5179;5180;6780;8905;9912
+selfbuff!5487;768;9634;783
+distance<30
+cooldown:1500;1
+mana>10
+!incombat
+castonce
 
 
 //====================================================================================
 // DMG SPELLS
 
-// Every other dmg spell and rotation goes here.
+//Claw
+castspell:1082;3029;5201;9849;9850
+selfbuff=768
+distance<5
+energy>44
+level>19
+incombat
 
+//Rake
+castspell:1822;1823;1824;9904
+targetbuff!1822;1823;1824;9904
+selfbuff=768
+combopoints<4
+energy>39
+level>23
+incombat
+
+//Faerie Fire (Feral)
+castspell:16857
+selfbuff=5487;768
+targetbuff!16857
+distance<30
+level>17
+incombat
+
+//Tiger's Fury
+castspell:5217;6793;9845;9846
+selfbuff=768
+combopoints>3
+distance<5
+energy>29
+level>23
+incombat
+
+//Rip
+castspell:1079;9492;9493;9752;9894;9896
+selfbuff=768
+targethp>60
+combopoints>3
+distance<5
+energy>29
+level>19
+incombat
+
+//Ferocious Bite
+castspell:22568;22827;22828;22829;31018
+selfbuff=768
+targethp<60
+combopoints>3
+distance<5
+energy>34
+level>31
+incombat
+
+//Maul
+castspell:6807;6808;6809;8972;9745;9880;9881
+selfbuff=5487;9634
+distance<5
+rage>14
+level>9
+incombat
+
+//Bash
+castspell:5211;6798;8983
+selfbuff=5487;9634
+targethp<70
+distance<5
+rage>9
+level>13
+incombat
+
+//Swipe
+castspell:779;780;769;9754;9908
+selfbuff=5487;9634
+combatcount>1
+rage>19
+level>15
+incombat
+
+//Moonfire
+castspell:8921;8924;8925;8926;8927;8928;8929;9833;9834;9835
+targetbuff!8921;8924;8925;8926;8927;8928;8929;9833;9834;9835
+selfbuff!5487;768;9634;783
+distance<30
+targethp>12
+cooldown:1500;1
+mana>10
+level>3
+
+//Wrath
+castspell:5176;5177;5178;5179;5180;6780;8905;9912
+selfbuff!5487;768;9634;783
+distance<30
+cooldown:1500;1
+mana>10
 
 
 //=====================================================================
 // AUTO ATTACK
-// Remove spellcaster or non spellcaster. if not hunter remove that part too.
-
-// = SPELLCASTERS =================\\
-//Wand - if no mana
-castspell:5019
-distance<30
-mana<15
-!wandcasting
-!autoattacking
-
-//Attack - if no wand
-castspell:6603
-distance<5
-mana<15
-!wandcasting
-!autoattacking
-nogcd
-//=================================\\
-
-// = NON SPELLCASTERS ==============\\
-//Auto Shot - Only Hunter
-castspell:75
-distance>10
-distance<25
-!wandcasting
-nogcd
 
 //Attack - Melee
 castspell:6603
+selfbuff!783
 distance<5
 !autoattacking
 nogcd
-//=================================\\
