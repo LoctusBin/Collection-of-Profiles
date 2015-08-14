@@ -6,7 +6,7 @@
 
 // PROFILE INFO:
 // Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
-// Write here about macros etc.
+// If you want pulling with bow/thrown then remove the comment "//" down in the bow/thrown pulling
 
 // CREDITS:
 // Made By: Loctus
@@ -92,6 +92,22 @@ distance<5
 energy>25
 level>11
 
+//stealth - Out of stealth if nothing to attack.
+castspell:1784;1785;1786;1787
+selfbuff=1784;1785;1786;1787
+!havetarget
+selfhp>80
+!incombat
+cooldown:10000;1
+
+//stealth - Before eating etc.
+castspell:1784;1785;1786;1787
+selfbuff!1784;1785;1786;1787
+!havetarget
+selfhp<63
+!incombat
+cooldown:10000;1
+
 
 //====================================================================================
 // CONSUMABLES
@@ -117,7 +133,7 @@ breakonfullhp
 
 //Eat - in case.
 use:food
-selfhp<58
+selfhp<55
 !incombat
 channelingtime:20000
 breakoncombat
@@ -126,7 +142,7 @@ breakonfullhp
 
 //Rest, if out of food and bandage
 cast:20
-selfhp<55
+selfhp<63
 channelingtime:15000
 !incombat
 breakoncombat
@@ -151,6 +167,7 @@ use:agility scroll
 // PULLING
 
 //pull with bow/gun/thrown
+//Remove the "//" under here if wanting ranged pulling
 //castspell:2764;7919;2480;7918
 //channelingtime:2500
 //distance<30
@@ -160,9 +177,9 @@ use:agility scroll
 //stealth
 castspell:1784;1785;1786;1787
 selfbuff!1784;1785;1786;1787
-distance<40
+distance<30
 !incombat
-cooldown:10000
+cooldown:10000;1
 
 //Sinister Strike & 26+ cheap shot
 castspell:1752;1757;1758;1759;1760;8621;11293;11294;1833
@@ -177,6 +194,7 @@ castspell:5171;6774
 energy>25
 combopoints>1
 castonce
+level>9
 
 //adrenaline rush
 castspell:13750
