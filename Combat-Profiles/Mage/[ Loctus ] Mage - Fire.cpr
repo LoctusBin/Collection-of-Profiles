@@ -465,10 +465,12 @@ chance:20
 // Edit cast if you put it on another bar/slot
 cast:29
 mana>10
-distance<30
-combatcount>1
+incombat
 cooldown:32000
+channelingtime:2000
+combatcount>1
 level>7
+chance:80
 
 //Blast wave - If 3 or more, only if spec.
 castspell:11113;13018;13019;13020;13021
