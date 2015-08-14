@@ -179,7 +179,7 @@ targethp>20
 incombat
 cooldown:120000
 haveitem<1:trigger:4
-level>27
+level>28
 
 //Triggered drink
 use:drink
@@ -190,7 +190,7 @@ channelingtime:19000
 breakoncombat
 triggeredby:1
 haveitem<3:trigger:2
-level>3
+level>5
 
 //Eat and drink
 use:food
@@ -204,7 +204,7 @@ nogcd
 triggers:1
 haveitem<3:trigger:3
 afterloot
-level>5
+level>7
 
 //Eat
 use:food
@@ -217,7 +217,7 @@ afterloot
 nostand
 nogcd
 breakonfullhp
-level>5
+level>7
 
 //Drink
 use:drink
@@ -230,7 +230,7 @@ afterloot
 nostand
 nogcd
 breakonfullmana
-level>3
+level>5
 
 //Eat - pre conjure
 use:food
@@ -242,7 +242,7 @@ afterloot
 nostand
 nogcd
 breakonfullhp
-level<6
+level<8
 
 //Drink - pre conjure
 use:drink
@@ -254,7 +254,7 @@ afterloot
 nostand
 nogcd
 breakonfullmana
-level<4
+level<6
 
 //Spirit Scroll
 use:spirit scroll
