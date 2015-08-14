@@ -131,8 +131,188 @@ level>39
 
 
 //=====================================================================
+// CONJURE
+
+//Conjure Food Rank 1
+castspell:587
+!incombat
+breakoncombat
+haveitem:5349<6
+cooldown:3500
+mana>20
+level>5
+level<12
+
+//Conjure Food Rank 2
+castspell:597
+!incombat
+breakoncombat
+haveitem:1113<6
+cooldown:3500
+mana>20
+level>11
+level<22
+
+//Conjure Food Rank 3
+castspell:990
+!incombat
+breakoncombat
+haveitem:1114<6
+cooldown:3500
+mana>20
+level>21
+level<32
+
+//Conjure Food Rank 4
+castspell:6129
+!incombat
+breakoncombat
+haveitem:1487<6
+cooldown:3500
+mana>20
+level>31
+level<42
+
+//Conjure Food Rank 5
+castspell:10144
+!incombat
+breakoncombat
+haveitem:8075<6
+cooldown:3500
+mana>20
+level>41
+level<52
+
+//Conjure Food Rank 6
+castspell:10145
+!incombat
+breakoncombat
+haveitem:8076<6
+cooldown:3500
+mana>20
+level>51
+level<60
+
+//Conjure Food Rank 7
+castspell:28612
+!incombat
+breakoncombat
+haveitem:22895<6
+cooldown:3500
+mana>20
+level>59
+
+//Conjure Water Rank 1
+castspell:5504
+!incombat
+breakoncombat
+haveitem:5350<6
+cooldown:3500
+mana>20
+level>4
+level<10
+
+//Conjure Water Rank 2
+castspell:5505
+!incombat
+breakoncombat
+haveitem:2288<6
+cooldown:3500
+mana>20
+level>9
+level<20
+
+//Conjure Water Rank 3
+castspell:5506
+!incombat
+breakoncombat
+haveitem:2136<6
+cooldown:3500
+mana>20
+level>19
+level<30
+
+//Conjure Water Rank 4
+castspell:6127
+!incombat
+breakoncombat
+haveitem:3772<6
+cooldown:3500
+mana>20
+level>29
+level<40
+
+//Conjure Water Rank 5
+castspell:10138
+!incombat
+breakoncombat
+haveitem:8077<6
+cooldown:3500
+mana>20
+level>39
+level<50
+
+//Conjure Water Rank 6
+castspell:10139
+!incombat
+breakoncombat
+haveitem:8078<6
+cooldown:3500
+mana>20
+level>49
+level<60
+
+//Conjure Water Rank 7
+castspell:10140
+!incombat
+breakoncombat
+haveitem:8079<6
+cooldown:3500
+mana>20
+level>59
+
+//Conjure Mana Gem Rank 1
+castspell:759
+mana>40
+cooldown:4000
+haveitem:5514<1
+mana>25
+level>27
+level<38
+!incombat
+
+//Conjure Mana Gem Rank 2
+castspell:3552
+mana>40
+cooldown:4000
+haveitem:5513<1
+mana>25
+level>37
+level<48
+!incombat
+
+//Conjure Mana Gem Rank 3
+castspell:10053
+mana>40
+cooldown:4000
+haveitem:8007<1
+mana>25
+level>47
+level<58
+!incombat
+
+//Conjure Mana Gem Rank 4
+castspell:10054
+mana>40
+cooldown:4000
+haveitem:8008<1
+mana>25
+level>57
+!incombat
+
+
+//=====================================================================
 // CONSUMEABLES
-// The stuff that needs to conjure will take 1-2 lvles to take effect.
 
 //Evocation
 castspell:12051
@@ -151,7 +331,6 @@ mana<27
 targethp>20
 incombat
 cooldown:120000
-haveitem<1:trigger:4
 level>28
 
 //Triggered drink
@@ -162,7 +341,7 @@ nogcd
 channelingtime:19000
 breakoncombat
 triggeredby:1
-haveitem<3:trigger:2
+level>3
 
 //Eat and drink
 use:food
@@ -174,7 +353,6 @@ cooldown:1500
 nostand
 nogcd
 triggers:1
-haveitem<3:trigger:3
 afterloot
 
 //Eat
@@ -183,7 +361,6 @@ selfhp<65
 !incombat
 channelingtime:19000
 breakoncombat
-haveitem<3:trigger:3
 afterloot
 nostand
 nogcd
@@ -191,14 +368,31 @@ breakonfullhp
 
 //Drink
 use:drink
-mana<53
+mana<56
 !incombat
 channelingtime:19000
 breakoncombat
-haveitem<3:trigger:2
 afterloot
 nostand
 nogcd
+breakonfullmana
+
+//Stand still and rest - Health
+cast:20
+channelingtime:15000
+breakoncombat
+!incombat
+selfhp<60
+afterloot
+breakonfullhp
+
+//Stand still and rest - Mana
+cast:20
+channelingtime:15000
+breakoncombat
+!incombat
+mana<56
+afterloot
 breakonfullmana
 
 //Spirit Scroll
@@ -208,34 +402,6 @@ use:spirit scroll
 //Stamina Scroll
 use:stamina scroll
 !incombat
-
-
-//=====================================================================
-// CONJURE
-
-//Conjure Mana Gem
-castspell:759;3552;10053;10054
-mana>25
-!incombat
-triggeredby:4
-cooldown:4000
-level>27
-
-//conjure food
-castspell:587;597;990;6129;10144;10145;28612
-!incombat
-breakoncombat
-triggeredby:3
-cooldown:3500
-level>5
-
-//conjure water
-castspell:5504;5505;5506;6127;10138;10139;10140
-!incombat
-breakoncombat
-triggeredby:2
-cooldown:3500
-level>3
 
 
 //=====================================================================
