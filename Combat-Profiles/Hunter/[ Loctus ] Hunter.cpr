@@ -7,6 +7,7 @@
 // PROFILE INFO:
 // As for now you need to feed your pet yourself.
 // Bar 2 slot 0 are used for rest if out of mana/hp (dont put spells here).
+// Bar 2 slot 9 uses attack pet macro: /script PetAttack(target)
 
 // CREDITS:
 // Made By: Loctus
@@ -211,7 +212,6 @@ afterloot
 breakonfullhp
 
 //Stand still and rest - Mana
-//(only thing im unsure you can leave if you dont use mana)
 cast:20
 channelingtime:20000
 breakoncombat
@@ -241,11 +241,22 @@ use:intellect scroll
 //====================================================================================
 // PULLING
 
+//Pet - Attack
+// /script PetAttack(target)
+cast:29
+petactive
+petalive
+pethealth>50
+distance<36
+castonce
+!incombat
+level>9
+
 //hunters mark
 castspell:1130;14323;14325;14324
+targetbuff!1130;14323;14325;14324
 distance>25
 distance<36
-targetbuff!1130;14323;14325;14324
 !incombat
 level>5
 
@@ -296,15 +307,6 @@ cooldown:10000
 mana>10
 level>17
 
-//serpent sting
-castspell:1978;13549;13550;13551;13552;13553;13554;13555;25295
-distance>10
-targetbuff!1978;13549;13550;13551;13552;13553;13554;13555;25295
-distance<35
-incombat
-mana>10
-level>3
-
 //arcane shot
 castspell:3044;14281;14282;14283;14284;14285;14286;14287
 distance>10
@@ -312,6 +314,15 @@ cooldown:6000
 distance<35
 mana>10
 level>5
+
+//serpent sting
+castspell:1978;13549;13550;13551;13552;13553;13554;13555;25295
+targetbuff!1978;13549;13550;13551;13552;13553;13554;13555;25295
+distance>10
+distance<35
+incombat
+mana>10
+level>3
 
 //Raptor Strike
 castspell:2973;14260;14261;14262;14263;14264;14265;14266
