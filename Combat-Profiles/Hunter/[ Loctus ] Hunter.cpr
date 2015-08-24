@@ -251,6 +251,7 @@ distance<36
 castonce
 !incombat
 level>9
+nogcd
 
 //hunters mark
 castspell:1130;14323;14325;14324
