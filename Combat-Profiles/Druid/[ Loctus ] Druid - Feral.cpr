@@ -230,22 +230,21 @@ mana>70
 level>9
 !incombat
 
-//Bear Form
-castspell:5487;9634
-selfbuff!5487;9634
-distance<30
-mana>60
-cooldown:2000;2
-level>9
-level<20
-
 //Cat Form
 castspell:768
-selfbuff!768;783
+selfbuff!768;783;5487;9634
 distance<30
-mana>60
+mana>30
 cooldown:2000;2
 level>19
+
+//Bear Form
+castspell:5487;9634
+selfbuff!5487;9634;768;783
+distance<30
+mana>30
+cooldown:2000;2
+level>9
 
 //Wrath - Before cat/bear form
 castspell:5176;5177;5178;5179;5180;6780;8905;9912
@@ -279,7 +278,7 @@ incombat
 
 //Faerie Fire (Feral)
 castspell:16857
-selfbuff=5487;768
+selfbuff=5487;9634;768
 targetbuff!16857
 distance<30
 level>17
