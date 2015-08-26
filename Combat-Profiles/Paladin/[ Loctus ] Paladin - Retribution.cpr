@@ -70,14 +70,20 @@ incombat
 castspell:19750;19939;19940;19941;19942;19943
 mana>10
 level>19
-triggeredby:2
+triggeredby:3
+incombat
+
+//Holy Light & 20+ Flash of Light - in combat
+castspell:635;639;647;19750;19939;19940;19941;19942;19943
+mana>15
+selfhp<38
 incombat
 
 //Holy Light - heal up after combat
 castspell:635;639;647;1026;1042;3472;10328;10329;25292
 selfhp<65
 !incombat
-mana>50
+mana>30
 cooldown:3500;1
 
 
@@ -97,11 +103,23 @@ selfbuff!465;10290;7294;10298;10299;10300;10301
 
 //Divine Shield
 castspell:642;1020
+selfbuff!25771
 selfhp<20
 cooldown:300000
 incombat
 targethp>20
+mana>15
 level>33
+
+//Divine protection
+castspell:498;5573
+selfbuff!25771
+selfhp<25
+cooldown:60000
+incombat
+targethp>20
+mana>15
+level>5
 
 
 //====================================================================================
@@ -164,23 +182,43 @@ use:intellect scroll
 castspell:20154;21084;20287;20288;20375;20915;20918;20919;20920
 selfbuff!20154;21084;20287;20288;20375;20915;20918;20919;20920
 distance<10
+mana>15
 
 
 //====================================================================================
 // DMG SPELLS
+
+//Consecration - 2+ more enemies
+castspell:26573;20116;20922;20923;20924
+distance<30
+cooldown:8000
+combatcount>1
+mana>15
+level>19
 
 //Hammer of Wrath
 castspell:24275;24274;24239
 targethp<20
 distance<30
 cooldown:6000
+mana>15
 level>43
 
-//Hammer of Justice
+//Hammer of Justice #1
 castspell:853;5588;5589;10308
 distance<9
-cooldown:60000
+cooldown:60000;2
+selfhp<40
+mana>15
+triggers:3
+level>19
+
+//Hammer of Justice #2
+castspell:853;5588;5589;10308
+distance<9
+cooldown:60000;2
 selfhp<50
+mana>15
 triggers:2
 level>7
 
@@ -189,7 +227,7 @@ castspell:20271
 selfbuff=20154;21084;20287;20288;20375;20915;20918;20919;20920
 distance<10
 cooldown:8000
-mana>50
+mana>30
 level>3
 nogcd
 
