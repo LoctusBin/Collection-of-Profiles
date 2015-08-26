@@ -28,22 +28,22 @@ The template is mostly for making it easier to look at the code and find out tha
 
 ## Short Combat Info
 
-| Class   | Specialization  | Stage * | Macro                         | Short info       |
-|---------|-----------------|:-------:|:-----------------------------:|------------------|
-| Druid   | Feral           | Stable  | :negative_squared_cross_mark: |  |
+| Class   | Specialization  | Stage * | Macro                         | Short info / Quotes       				|
+|---------|-----------------|:-------:|:-----------------------------:|-----------------------------------------|
+| Druid   | Feral           | Stable  | :negative_squared_cross_mark: | "works perfectly" -walterchangUNS		|
 | Hunter  | N/A             | _Alpha_ | :ballot_box_with_check:       |  |
-| Mage    | Fire & Frost    | Stable  | :ballot_box_with_check:       |  |
+| Mage    | Fire & Frost    | Stable  | :ballot_box_with_check:       | "This profile is on point." -oaj2011	|
 | Paladin | Retribution     | _Beta_  | :negative_squared_cross_mark: |  |
-| Priest  | Shadow          | _Beta_  | :negative_squared_cross_mark: | Miss some racial spells + needs more tweaking. |
-| Rogue   | Combat          | _Beta_  | :negative_squared_cross_mark: | Needs some more tweaking. |
-| Shaman  | N/A             | Stable  | :negative_squared_cross_mark: | Works mostly like a Enhancement profile. |
-| Warlock | Affliction      | Stable  | :ballot_box_with_check:       | Modified Nik's profile |
-| Warrior | Prot & Default? | Stable  | :ballot_box_with_check:       | Stancedance & off-tanking |
+| Priest  | Shadow          | _Beta_  | :negative_squared_cross_mark: | "it's really good." -hamish				|
+| Rogue   | Combat          | _Beta_  | :negative_squared_cross_mark: | Needs some more tweaking. 				|
+| Shaman  | Enhancement?    | Stable  | :negative_squared_cross_mark: | "Nice profile." -Gazlo					|
+| Warlock | Affliction      | Stable  | :ballot_box_with_check:       | "Cheers, keep up the good work!" -nik	|
+| Warrior | Prot & Default? | Stable  | :ballot_box_with_check:       | Stancedance & off-tanking 				|
   
   
 ###### \* About the stages:
 | Stage    | About           | 
-|----------|-----------------|
+|:--------:|-----------------|
 | Stable   | There can be some minor issues, but they work from 1-60. May miss some minor spells.  |
 | _Beta_   | A tested profile that needs some tweaking. May miss some spells. |
 | _Alpha_  | A fresh profile that needs lots of testing and tweaking. May miss lots of spells.  |
