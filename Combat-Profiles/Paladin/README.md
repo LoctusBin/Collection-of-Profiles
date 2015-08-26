@@ -12,7 +12,7 @@
 **Healing routines:**
 - Lay on Hands if under 10% health
 - Holy light and Flash of light when enemy is stuck or low hp.
-- Wioll heal to full hp out of battle
+- Will heal up when out of battle
 
 **Combat routines:**
 - consecration if 2+ enemies
