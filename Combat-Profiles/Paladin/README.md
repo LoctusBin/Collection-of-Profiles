@@ -25,6 +25,6 @@
 - Use of Healthpotion if really low on health
 - Use of useful scrolls
 - Stand still if no more drinks
-- Swarf uses stoneform
+- Dwarf uses stoneform
 
 No need for macros or custom keybindings. Just load it :)
