@@ -85,11 +85,19 @@ selfbuff!13163;25296;14322;14321;14320;14319;14318;13165
 !incombat
 level>3
 
-//trueshot aura
+//Trueshot Aura
 castspell:19506;20905;20906
 selfbuff!19506;20905;20906
 !incombat
 level>39
+
+//Rapid Fire
+castspell:3045
+cooldown:180000
+incombat
+targethp>70
+level>25
+chance:20
 
 
 //=====================================================================
@@ -289,20 +297,20 @@ mana>10
 castonce
 level>5
 
+//Auto Shot
+castspell:75
+distance>10
+distance<25
+!wandcasting
+nogcd
+
 
 //====================================================================================
 // DMG SPELLS
 
-//rapid fire
-castspell:3045
-combatcount>1
-cooldown:180000
-mana>10
-level>25
-
 //multishot
 castspell:2643;14288;14289;14290;25294
-combatcount>1
+distance<35
 distance>5
 cooldown:10000
 mana>10
