@@ -9,7 +9,7 @@ Some error about the missing spell-ids are talents btw, or that you forget to le
 
 ## How to add Combat profile to bot:  
 1. First download all my profiles from link below or set up SVN: [(Link)](https://github.com/LoctusBin/Collection-of-Profiles.git)   [(Guide)](https://youtu.be/y3Yd12RIn90)  
-  :link: [Download Profiles *.ZIP](http://adf.ly/1NPEPI) [(Direct)](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+  :link: [Download Profiles *.ZIP](http://adf.ly/1NPwfe) [(Direct)](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
 2. Find your choice of profile (the *.cpr file) in the folder ":file_folder: Combat-Profiles", sorted after class then the profiles themselves.
 3. Copy your selected profile over to ":file_folder: combat" folder in your bot main folder
 4. Load it like a default combat profile :)
