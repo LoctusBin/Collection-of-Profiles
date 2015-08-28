@@ -5,8 +5,8 @@ If there is a chance to get killed there will be a Ghost way point so it will go
 Just started to do this as i wants to have an easy way to move from the starting area to the city.
 
 ## How to add Goto profile to bot:  
-1. First download all my profiles from link below or set up SVN.  
-  :link: [Download Profiles](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
+1. First download all my profiles from link below or set up SVN: [(Link)](https://github.com/LoctusBin/Collection-of-Profiles.git)   [(Guide)](https://youtu.be/y3Yd12RIn90)  
+  :link: [Download Profiles *.ZIP](http://adf.ly/1NPEPI) [(Direct)](https://github.com/LoctusBin/Collection-of-Profiles/archive/master.zip)
 2. Find your choice of profile (the *.fpr file) in the folder ":file_folder: Goto-Profiles".
 3. Copy your selected profile over to ":file_folder: farming" folder in your bot main folder.
 4. Load it like a default farming profile and run as Grinding :)
