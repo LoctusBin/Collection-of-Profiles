@@ -256,7 +256,7 @@ castonce
 
 //Mind Blast
 castspell:8092;8102;8103;8104;8105;8106;10945;10946;10947
-mana>10
+mana>20
 cooldown:5500
 distance<30
 level>9
@@ -266,7 +266,7 @@ castspell:589;594;970;992;2767;10892;10893;10894
 mana>10
 targetbuff!589;594;970;992;2767;10892;10893;10894
 distance<30
-targethp>25
+targethp>30
 level>3
 
 //Mind Flay - When shield is up
@@ -288,13 +288,15 @@ castonce
 //Mind Flay - If nothing else to cast / Mana friendly
 castspell:15407;17311;17312;17313;17314;18807
 distance<20
-mana>10
+mana>20
+targethp>10
 channelingtime:3000
 level>19
 
 //Smite - uses mostly before lvl 20
 castspell:585;591;598;984;1004;6060;10933;10934
-mana>10
+mana>50
+targethp>30
 distance<30
 
 
@@ -304,7 +306,7 @@ distance<30
 //Wand - if no mana
 castspell:5019
 distance<30
-mana<15
+mana<50
 cooldown:3000
 !wandcasting
 !autoattacking
