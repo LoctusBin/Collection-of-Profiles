@@ -142,7 +142,7 @@ channelingtime:27000
 selfbuff!2645
 breakoncombat
 !incombat
-mana<62
+mana<52
 afterloot
 breakonfullmana
 
