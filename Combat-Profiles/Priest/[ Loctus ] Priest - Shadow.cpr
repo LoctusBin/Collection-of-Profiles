@@ -125,9 +125,9 @@ nogcd
 //====================================================================================
 // HEALS
 
-//Renew
+//Renew - Not in shadowform
 castspell:139;6074;6075;6076;6077;6078;10927;10928;10929;25315
-selfbuff!139;6074;6075;6076;6077;6078;10927;10928;10929;25315
+selfbuff!139;6074;6075;6076;6077;6078;10927;10928;10929;25315;15473
 selfhp<80
 mana>10
 level>7
@@ -143,8 +143,8 @@ castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
 selfhp<50
 mana>15
 
-//Heal (long!)
-castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314
+//Heal (long!) - Not in shadowform
+castspell:2050;2052;2053;2054;2055;6063;6064;8812;2060;10963;10964;10965;25314;15473
 selfhp<80
 mana>15
 !incombat
@@ -181,6 +181,12 @@ combatcount>1
 selfbuff!10060
 level>39
 
+//Shadowform
+castspell:15473
+selfbuff!15473
+mana>75
+!incombat
+
 
 //====================================================================================
 // CONSUMEABLES
@@ -201,7 +207,7 @@ cast:20
 channelingtime:20000
 breakoncombat
 !incombat
-mana<50
+mana<55
 afterloot
 breakonfullmana
 
@@ -233,10 +239,12 @@ targethp>75
 distance<30
 mana>40
 cooldown:10000
+level>29
 castonce
 
 //Holy Fire - From lvl 20
 castspell:14914;15262;15263;15264;15265;15266;15267;15261
+selfbuff!15473
 !incombat
 distance<30
 mana>40
@@ -245,6 +253,7 @@ level>19
 
 //Smite - Pre lvl 20, will cast if mob is far away
 castspell:585;591;598;984;1004;6060;10933;10934
+selfbuff!15473
 mana>10
 distance<30
 castonce
@@ -295,6 +304,7 @@ level>19
 
 //Smite - uses mostly before lvl 20
 castspell:585;591;598;984;1004;6060;10933;10934
+selfbuff!15473
 mana>50
 targethp>30
 distance<30
