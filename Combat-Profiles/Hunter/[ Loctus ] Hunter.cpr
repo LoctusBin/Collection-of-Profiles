@@ -103,16 +103,16 @@ chance:20
 //=====================================================================
 // PET stuff
 
-//call pet
-castspell:883
-!petactive
-level>9
-
-//revive pet
+//Revive pet
 castspell:982
 !petalive
 petactive
 !incombat
+level>9
+
+//call pet
+castspell:883
+!petactive
 level>9
 
 //Mend Pet
