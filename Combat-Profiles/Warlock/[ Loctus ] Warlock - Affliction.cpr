@@ -288,7 +288,7 @@ level>9
 castspell:686;695;705;1088;1106;7641;11659;11660;11661;25307
 selfbuff=17941
 distance<30
-targethp>10
+targethp>20
 mana>10
 
 // Curse of Tongues
@@ -405,6 +405,13 @@ distance<30
 castspell:5019
 distance<30
 mana<10
+!wandcasting
+!autoattacking
+
+//Wand - target low hp
+castspell:5019
+distance<30
+targethp<40
 !wandcasting
 !autoattacking
 

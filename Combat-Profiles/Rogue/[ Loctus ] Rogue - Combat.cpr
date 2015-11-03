@@ -78,9 +78,10 @@ nogcd
 
 //evasion
 castspell:5277
-selfhp<30
-targethp>25
+selfhp<10
+targethp>20
 cooldown:210000
+backpedal:5000
 nogcd
 level>7
 
