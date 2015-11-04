@@ -237,6 +237,6 @@ nogcd
 
 //move into range if mob walks away
 cast:20
-distance<5
-cooldown:5000
+distance<3
+cooldown:7000
 nogcd
