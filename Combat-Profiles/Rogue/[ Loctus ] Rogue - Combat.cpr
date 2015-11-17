@@ -76,6 +76,16 @@ nogcd
 //====================================================================================
 // BUFF
 
+//Vanish
+castspell:1856;1857
+selfhp<10
+targethp>17
+haveitem:5140>0
+backpedal:6000
+channelingtime:7000
+level>21
+incombat
+
 //evasion
 castspell:5277
 selfhp<10
