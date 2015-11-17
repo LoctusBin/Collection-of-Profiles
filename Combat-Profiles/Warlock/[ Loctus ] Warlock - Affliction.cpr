@@ -22,6 +22,88 @@ gcd:1500
 
 
 //====================================================================================
+// HEALTHSTONE
+
+//Minor Healthstone (10+)
+use:5512
+selfhp<25
+haveitem:5512>0
+level>9
+level<22
+incombat
+
+//Lesser Healthstone (22+)
+use:5511
+selfhp<25
+haveitem:5511>0
+level>21
+level<34
+incombat
+
+//Healthstone (34+)
+use:5509
+selfhp<25
+haveitem:5509>0
+level>33
+level<36
+incombat
+
+//Greater Healthstone (46+)
+use:5510
+selfhp<25
+haveitem:5510>0
+level>45
+level<58
+incombat
+
+//Major Healthstone (58+)
+use:9421
+selfhp<25
+haveitem:9421>0
+level>57
+incombat
+
+// Create Minor Healthstone (10+)
+castspell:6201
+haveitem:5512<1
+haveitem:6265>1
+level>9
+level<22
+!incombat
+
+// Create Lesser Healthstone (22+)
+castspell:6202
+haveitem:5511<1
+haveitem:6265>1
+level>21
+level<34
+!incombat
+
+// Create Healthstone (34+)
+castspell:5699
+haveitem:5509<1
+haveitem:6265>1
+level>33
+level<36
+!incombat
+
+// Create Greater Healthstone (46+)
+castspell:11729
+haveitem:5510<1
+haveitem:6265>1
+level>45
+level<58
+!incombat
+
+// Create Major Healthstone (58+)
+castspell:11730
+haveitem:9421<1
+haveitem:6265>1
+level>57
+!incombat
+
+
+//====================================================================================
 // POTIONS
 
 //Health Pot - just in case
