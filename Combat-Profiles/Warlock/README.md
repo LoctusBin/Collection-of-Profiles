@@ -19,7 +19,7 @@ _Tweaked and made more userfriendly from Nik's profile._
 - And clean up the profile some :)
 - Added in dismiss imp if have soulshard
 - Smarter Autoattack/Wand use
-- Healthstone use
+- Healthstone use  
 +++
 
 
