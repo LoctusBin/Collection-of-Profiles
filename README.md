@@ -7,7 +7,7 @@ There is be a readme in each of the Folders and profiles to describe how to use 
 :open_file_folder: [Combat profiles](Combat-Profiles)  
 :open_file_folder: [Goto profiles](Goto-Profiles)  
 
-Please read up on the [FAQ](https://github.com/LoctusBin/Collection-of-Profiles/wiki/FAQ) before asking questions.
+Please read up on the [FAQ](https://github.com/LoctusBin/Collection-of-Profiles/wiki/FAQ) before asking questions.  
 If you need help setting up the bot, then read my [tutorial](http://adf.ly/1RpapV) [(Direct)](http://vanillabotter.com/forum/viewtopic.php?f=7&t=1727)
   
   
