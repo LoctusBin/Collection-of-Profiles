@@ -79,12 +79,6 @@ nogcd
 //====================================================================================
 // BUFF UP!!
 
-//Aspect of the Hawk - Monkey before this
-castspell:13163;25296;14322;14321;14320;14319;14318;13165
-selfbuff!13163;25296;14322;14321;14320;14319;14318;13165
-!incombat
-level>3
-
 //Trueshot Aura
 castspell:19506;20905;20906
 selfbuff!19506;20905;20906
@@ -244,6 +238,26 @@ use:agility scroll
 //Intellect Scroll
 use:intellect scroll
 !incombat
+
+
+//====================================================================================
+// Aspect of the...
+
+//Aspect of the Hawk - in/before battle
+castspell:13163;25296;14322;14321;14320;14319;14318;13165
+selfbuff!13163;25296;14322;14321;14320;14319;14318;13165
+distance<40
+level>3
+
+//Aspect of the Cheetah - use when not in battle
+castspell:5118
+selfbuff!5118
+!incombat
+!havetarget
+mana>45
+selfhp>60
+level>19
+afterloot
 
 
 //====================================================================================
