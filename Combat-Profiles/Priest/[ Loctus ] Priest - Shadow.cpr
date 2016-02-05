@@ -302,12 +302,20 @@ targethp>10
 channelingtime:3000
 level>19
 
-//Smite - uses mostly before lvl 20
+//Smite - just in case after 20
 castspell:585;591;598;984;1004;6060;10933;10934
 selfbuff!15473
 mana>50
 targethp>30
 distance<30
+level>19
+
+//Smite - before 20
+castspell:585;591;598;984;1004;6060;10933;10934
+selfbuff!15473
+mana>30
+distance<30
+level<20
 
 
 //=====================================================================
