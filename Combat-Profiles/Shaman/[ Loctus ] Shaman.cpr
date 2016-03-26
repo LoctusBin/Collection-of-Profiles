@@ -126,7 +126,7 @@ selfbuff!2645
 mana>20
 
 //OFF:	Rockbiter & 10+ Flametongue & 20+ Frostbrand & 30+ Windfury	 					<---- OFFHAND REMOVE THE "//" UNDER
-//Remove the "//" on the 2 lines below if you dual wield.
+//Remove the "//" on the 4 lines below if you dual wield.
 //castspell:8017;8018;8024;8027;8033;8038;8232;8235;10486;16362
 //!offhandbuffed
 //selfbuff!2645
@@ -269,7 +269,7 @@ haveitem:5175>0
 distance<30
 mana>10
 level>3
-selfbuff!8072;8156;5187;10403;10404;10405
+selfbuff!8072;8156;5157;10403;10404;10405
 
 //Lightning Bolt
 castspell:403;529;548;915;943;6041;10391;10392;15207;15208
