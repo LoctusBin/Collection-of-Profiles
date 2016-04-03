@@ -83,9 +83,10 @@ incombat
 // more than 1 enemy target check
 castspell:331;332;547;913;8004;8008;8010;10466;10467;10468
 selfbuff!2645
-selfhp<70
+selfhp<60
 mana>10
 combatcount>1
+combatcount<3
 cooldown:1700
 incombat
 
