@@ -408,7 +408,7 @@ use:stamina scroll
 // PULLING
 
 //Frostbolt - Opening shot
-castspell:116;205;837;7322;8406;8407;8407;8408;10179;10180;1081
+castspell:116;205;837;7322;8406;8407;8407;8408;10179;10180;10181
 mana>40
 distance<30
 distance>15
