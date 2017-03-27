@@ -258,6 +258,7 @@ selfbuff!2645
 !havetarget
 mana>65
 selfhp>90
+cooldown:3000
 level>19
 afterloot
 
@@ -270,7 +271,7 @@ haveitem:5175>0
 distance<30
 mana>10
 level>3
-selfbuff!8072;8156;5157;10403;10404;10405
+selfbuff!8072;8156;8157;10403;10404;10405
 
 //Lightning Bolt
 castspell:403;529;548;915;943;6041;10391;10392;15207;15208
